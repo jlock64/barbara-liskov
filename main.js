@@ -58,16 +58,20 @@ getDataObj: function(data){
       title: el.title,
       blurb: el.abstract,
       url: el.url,
-      date: el.published_date,
+      date: moment(el.published_date).format('LL'),
       image: imgUrl
     }
+
   })
 },
 
 
 addDataToPage: function(dataObj){
   var newArr = page.getDataObj(dataObj);
-  _.each(newArr, function (el) {
+  var filteredArr = _.filter(newArr, function (el){
+    return el.image
+  })
+  _.each(filteredArr, function (el) {
     var tmpl = _.template(templates.post);
     $('div.mainContainer').append(tmpl(el));
   })
