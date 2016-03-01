@@ -1,0 +1,2105 @@
+guide for top stories api :: includes list of sections
+http://developer.nytimes.com/docs/top_stories_api/
+
+our access url skeleton
+http://api.nytimes.com/svc/topstories/v1/{section}.{response-format}?api-key={your-api-key}
+
+Key: 0c061decbcee9fc4a2a618b408849de6:18:74588993
+
+how I got the object bellow
+http://api.nytimes.com/svc/topstories/v1/world.json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993
+
+{
+status: "OK",
+copyright: "Copyright (c) 2016 The New York Times Company. All Rights Reserved.",
+section: "world",
+last_updated: "2016-03-01T12:42:03-05:00",
+num_results: 30,
+results: [
+{
+section: "World",
+subsection: "Middle East",
+title: "Hamas Commander, Accused of Theft and Gay Sex, Is Killed by His Own",
+abstract: "The death of Mahmoud Ishtiwi, who was accused of homosexuality, had all the trappings of a soap opera: sex, torture and embezzlement, in the armed wing of Hamas.",
+url: "http://www.nytimes.com/2016/03/02/world/middleeast/hamas-commander-mahmoud-ishtiwi-killed-palestine.html",
+byline: "By DIAA HADID and MAJD AL WAHEIDI",
+item_type: "Article",
+updated_date: "2016-03-01T06:33:53-5:00",
+created_date: "2016-03-01T06:33:56-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Palestinians",
+"Homosexuality and Bisexuality",
+"Deaths (Fatalities)"
+],
+org_facet: [
+"Hamas"
+],
+per_facet: [
+"Ishtiwi, Mahmoud"
+],
+geo_facet: [
+"Gaza Strip"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/02/26/world/26Qassam-web1/26Qassam-web1-thumbStandard-v2.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "The funeral of Mahmoud Ishtiwi, a former commander in the armed wing of Hamas, at a mosque in the Gaza Strip in February.",
+copyright: "Wissam Nassar for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/26/world/26Qassam-web1/26Qassam-web1-thumbLarge-v2.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "The funeral of Mahmoud Ishtiwi, a former commander in the armed wing of Hamas, at a mosque in the Gaza Strip in February.",
+copyright: "Wissam Nassar for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/26/world/26Qassam-web1/26Qassam-web1-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "The funeral of Mahmoud Ishtiwi, a former commander in the armed wing of Hamas, at a mosque in the Gaza Strip in February.",
+copyright: "Wissam Nassar for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/26/world/26Qassam-web1/26Qassam-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "The funeral of Mahmoud Ishtiwi, a former commander in the armed wing of Hamas, at a mosque in the Gaza Strip in February.",
+copyright: "Wissam Nassar for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/26/world/26Qassam-web1/26Qassam-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "The funeral of Mahmoud Ishtiwi, a former commander in the armed wing of Hamas, at a mosque in the Gaza Strip in February.",
+copyright: "Wissam Nassar for The New York Times"
+}
+]
+},
+{
+section: "World",
+subsection: "Middle East",
+title: "Iranian President and Moderates Make Strong Gains in Elections",
+abstract: "President Hassan Rouhani and his allies seem to have run strongly in voting for Parliament and Iran’s clerical panel, though official results are pending.",
+url: "http://www.nytimes.com/2016/03/01/world/middleeast/iran-elections.html",
+byline: "By THOMAS ERDBRINK",
+item_type: "Article",
+updated_date: "2016-02-29T17:00:57-5:00",
+created_date: "2016-02-29T13:24:57-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Elections",
+"Legislatures and Parliaments",
+"United States International Relations",
+"International Relations"
+],
+org_facet: [
+"Assembly of Experts"
+],
+per_facet: [
+"Rouhani, Hassan",
+"Khamenei, Ali",
+"Zarif, Mohammad Javad"
+],
+geo_facet: [
+"Iran"
+],
+multimedia: ""
+},
+{
+section: "Business Day",
+subsection: "International Business",
+title: "Europe’s New Border Controls Exact a Cost",
+abstract: "As the European Union grapples with the migration crisis, the resulting revival of checkpoints on vital transport routes threatens to cost billions of euros in lost business.",
+url: "http://www.nytimes.com/2016/03/02/business/international/europes-new-border-controls-exact-a-cost.html",
+byline: "By LIZ ALDERMAN and JAMES KANTER",
+item_type: "Article",
+updated_date: "2016-03-01T11:40:15-5:00",
+created_date: "2016-03-01T11:40:18-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Immigration and Emigration",
+"Schengen",
+"Delays (Transportation)",
+"Commuting"
+],
+org_facet: [
+"European Union",
+"European Commission"
+],
+per_facet: "",
+geo_facet: [
+"Europe",
+"Germany",
+"Austria",
+"Denmark"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/02/25/business/border-web06b/border-web06b-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Document controls at the Copenhagen Airport train station, the last stop before Malmo, Sweden. Inspections are imposing significant delays on cross-border commuters and shoppers.",
+copyright: "Laerke Posselt for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/25/business/border-web06b/border-web06b-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Document controls at the Copenhagen Airport train station, the last stop before Malmo, Sweden. Inspections are imposing significant delays on cross-border commuters and shoppers.",
+copyright: "Laerke Posselt for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/25/business/border-web06b/terror-web06b-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Document controls at the Copenhagen Airport train station, the last stop before Malmo, Sweden. Inspections are imposing significant delays on cross-border commuters and shoppers.",
+copyright: "Laerke Posselt for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/25/business/border-web06b/terror-web06b-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Document controls at the Copenhagen Airport train station, the last stop before Malmo, Sweden. Inspections are imposing significant delays on cross-border commuters and shoppers.",
+copyright: "Laerke Posselt for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/25/business/border-web06b/terror-web06b-superJumbo.jpg",
+format: "superJumbo",
+height: 1366,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Document controls at the Copenhagen Airport train station, the last stop before Malmo, Sweden. Inspections are imposing significant delays on cross-border commuters and shoppers.",
+copyright: "Laerke Posselt for The New York Times"
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "Russian Foreign Minister Calls for New Chemical Weapons Accord",
+abstract: "Sergey V. Lavrov said the existing treaty was insufficient to address the rising use of those arms by terrorist groups.",
+url: "http://www.nytimes.com/2016/03/02/world/europe/chemical-weapons-terrorist-groups-sergey-lavrov.html",
+byline: "By NICK CUMMING-BRUCE",
+item_type: "Article",
+updated_date: "2016-03-01T10:03:41-5:00",
+created_date: "2016-03-01T10:03:50-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Biological and Chemical Warfare",
+"Comprehensive Nuclear Test Ban Treaty",
+"Terrorism"
+],
+org_facet: [
+"Organization for the Prohibition of Chemical Weapons"
+],
+per_facet: [
+"Lavrov, Sergey V"
+],
+geo_facet: [
+"Russia"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Lavrov-web/02Lavrov-web-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Foreign Minister Sergey V. Lavrov of Russia, center, at the European headquarters of the United Nations in Geneva on Tuesday.",
+copyright: "Laurent Gillieron/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Lavrov-web/02Lavrov-web-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Foreign Minister Sergey V. Lavrov of Russia, center, at the European headquarters of the United Nations in Geneva on Tuesday.",
+copyright: "Laurent Gillieron/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Lavrov-web/02Lavrov-web-articleInline.jpg",
+format: "Normal",
+height: 126,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Foreign Minister Sergey V. Lavrov of Russia, center, at the European headquarters of the United Nations in Geneva on Tuesday.",
+copyright: "Laurent Gillieron/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Lavrov-web/02Lavrov-web-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Foreign Minister Sergey V. Lavrov of Russia, center, at the European headquarters of the United Nations in Geneva on Tuesday.",
+copyright: "Laurent Gillieron/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Lavrov-web/02Lavrov-web-superJumbo.jpg",
+format: "superJumbo",
+height: 1363,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Foreign Minister Sergey V. Lavrov of Russia, center, at the European headquarters of the United Nations in Geneva on Tuesday.",
+copyright: "Laurent Gillieron/European Pressphoto Agency"
+}
+]
+},
+{
+section: "Health",
+subsection: "",
+title: "New Study Links Zika Virus to Temporary Paralysis",
+abstract: "Mosquito-borne Zika virus may lead to increased risk of Guillain-Barré syndrome, which leaves patients unable to move and in some cases requires life support.",
+url: "http://www.nytimes.com/2016/03/01/health/zika-virus-guillain-barre-french-polynesia.html",
+byline: "By CATHERINE SAINT LOUIS",
+item_type: "Article",
+updated_date: "2016-02-29T18:47:06-5:00",
+created_date: "2016-02-29T18:45:59-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Zika Virus",
+"Guillain-Barre Syndrome",
+"Dengue Fever",
+"Epidemics"
+],
+org_facet: [
+"World Health Organization",
+"Lancet, The (Journal)"
+],
+per_facet: "",
+geo_facet: [
+"French Polynesia (France)"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/science/01ZIKA/01ZIKA-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Xiojanni Badillo embraced her aunt, Daysi Mendoza, who was recovering from Guillain-Barré syndrome — which leaves patients unable to move —at a hospital in Cucuta, Colombia.",
+copyright: "Ricardo Mazalan/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/science/01ZIKA/01ZIKA-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Xiojanni Badillo embraced her aunt, Daysi Mendoza, who was recovering from Guillain-Barré syndrome — which leaves patients unable to move —at a hospital in Cucuta, Colombia.",
+copyright: "Ricardo Mazalan/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/science/01ZIKA/01ZIKA-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Xiojanni Badillo embraced her aunt, Daysi Mendoza, who was recovering from Guillain-Barré syndrome — which leaves patients unable to move —at a hospital in Cucuta, Colombia.",
+copyright: "Ricardo Mazalan/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/science/01ZIKA/01ZIKA-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Xiojanni Badillo embraced her aunt, Daysi Mendoza, who was recovering from Guillain-Barré syndrome — which leaves patients unable to move —at a hospital in Cucuta, Colombia.",
+copyright: "Ricardo Mazalan/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/science/01ZIKA/01ZIKA-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Xiojanni Badillo embraced her aunt, Daysi Mendoza, who was recovering from Guillain-Barré syndrome — which leaves patients unable to move —at a hospital in Cucuta, Colombia.",
+copyright: "Ricardo Mazalan/Associated Press"
+}
+]
+},
+{
+section: "World",
+subsection: "Africa",
+title: "Raw Tensions Over Race Fester in South Africa",
+abstract: "Bitter controversies on social media have shown that two decades of democracy have muted neither the perception nor the reality of inequality.",
+url: "http://www.nytimes.com/2016/03/02/world/africa/raw-tensions-over-race-fester-in-south-africa.html",
+byline: "By ALAN COWELL",
+item_type: "Article",
+updated_date: "2016-03-01T09:19:43-5:00",
+created_date: "2016-03-01T09:19:44-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Race and Ethnicity",
+"Apartheid (Policy)",
+"Discrimination"
+],
+org_facet: "",
+per_facet: "",
+geo_facet: [
+"South Africa"
+],
+multimedia: ""
+},
+{
+section: "World",
+subsection: "Africa",
+title: "In Zimbabwe, Mugabe’s Birthday Is Rife With Political Jockeying",
+abstract: "The visible frailty of President Robert G. Mugabe has focused attention on the increasingly fierce struggle within his party to succeed him.",
+url: "http://www.nytimes.com/2016/03/01/world/africa/robert-mugabe-zimbabwe-president-92nd-birthday.html",
+byline: "By HOPEWELL CHIN’ONO and NORIMITSU ONISHI",
+item_type: "Article",
+updated_date: "2016-02-29T12:51:07-5:00",
+created_date: "2016-02-29T12:51:08-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Appointments and Executive Changes",
+"Birthdays"
+],
+org_facet: [
+"Movement for Democratic Change",
+"Zimbabwe African National Union-Patriotic Front (ZANU-PF)"
+],
+per_facet: [
+"Mugabe, Robert",
+"Mugabe, Grace"
+],
+geo_facet: [
+"Zimbabwe"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01ZIMBABWE-web2/01ZIMBABWE-web2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "President Mugabe’s birthday cake during celebrations at the Great Zimbabwe historic site in Masvingo on Saturday.",
+copyright: "Jekesai Njikizana/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01ZIMBABWE-web2/01ZIMBABWE-web2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "President Mugabe’s birthday cake during celebrations at the Great Zimbabwe historic site in Masvingo on Saturday.",
+copyright: "Jekesai Njikizana/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01ZIMBABWE-web2/01ZIMBABWE-web2-articleInline.jpg",
+format: "Normal",
+height: 126,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "President Mugabe’s birthday cake during celebrations at the Great Zimbabwe historic site in Masvingo on Saturday.",
+copyright: "Jekesai Njikizana/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01ZIMBABWE-web2/01ZIMBABWE-web2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "President Mugabe’s birthday cake during celebrations at the Great Zimbabwe historic site in Masvingo on Saturday.",
+copyright: "Jekesai Njikizana/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01ZIMBABWE-web2/01ZIMBABWE-web2-superJumbo.jpg",
+format: "superJumbo",
+height: 1362,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "President Mugabe’s birthday cake during celebrations at the Great Zimbabwe historic site in Masvingo on Saturday.",
+copyright: "Jekesai Njikizana/Agence France-Presse — Getty Images"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Indonesians Flock to Restaurant Where Woman Was Poisoned",
+abstract: "The case of the “coffee murder,” in which a young woman died of cyanide poisoning in Jakarta, has set off morbid curiosity.",
+url: "http://www.nytimes.com/2016/03/02/world/asia/jakarta-coffee-cup-murder-cyanide.html",
+byline: "By JOE COCHRANE",
+item_type: "Article",
+updated_date: "2016-03-01T11:46:53-5:00",
+created_date: "2016-03-01T11:46:55-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"coffee cup murder",
+"Poisoning and Poisons",
+"Murders, Attempted Murders and Homicides"
+],
+org_facet: [
+"Olivier (restaurant, Jakarta)"
+],
+per_facet: [
+"Wayan Mirna Salihin",
+"Jessica Kumala Wongso"
+],
+geo_facet: [
+"Jakarta (Indonesia)"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/02/20/world/coffeecup-web1/coffeecup-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Customers at the Olivier restaurant in Jakarta, where a young woman, Wayan Mirna Salihin, died in January of cyanide poisoning.",
+copyright: "Kemal Jufri for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/20/world/coffeecup-web1/coffeecup-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Customers at the Olivier restaurant in Jakarta, where a young woman, Wayan Mirna Salihin, died in January of cyanide poisoning.",
+copyright: "Kemal Jufri for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/20/world/coffeecup-web1/coffeecup-web1-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Customers at the Olivier restaurant in Jakarta, where a young woman, Wayan Mirna Salihin, died in January of cyanide poisoning.",
+copyright: "Kemal Jufri for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/20/world/coffeecup-web1/coffeecup-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Customers at the Olivier restaurant in Jakarta, where a young woman, Wayan Mirna Salihin, died in January of cyanide poisoning.",
+copyright: "Kemal Jufri for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/20/world/coffeecup-web1/coffeecup-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Customers at the Olivier restaurant in Jakarta, where a young woman, Wayan Mirna Salihin, died in January of cyanide poisoning.",
+copyright: "Kemal Jufri for The New York Times"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Osama bin Laden Feared Wife’s Tooth Held a Tracking Device",
+abstract: "Newly released documents suggest that as the United States turned up the pressure, the leader of Al Qaeda grew increasingly concerned about security breaches.",
+url: "http://www.nytimes.com/2016/03/02/world/middleeast/osama-bin-laden-materials-declassified.html",
+byline: "By MATTHEW ROSENBERG",
+item_type: "Article",
+updated_date: "2016-03-01T10:16:00-5:00",
+created_date: "2016-03-01T09:41:17-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Classified Information and State Secrets",
+"Terrorism"
+],
+org_facet: [
+"Navy Seals",
+"Office of the Director of National Intelligence"
+],
+per_facet: [
+"bin Laden, Osama"
+],
+geo_facet: [
+"Abbottabad (Pakistan)"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02binladen-web2/02binladen-web2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "The compound where Osama Bin Laden was killed in Abbottabad, Pakistan, in 2011.",
+copyright: "Warrick Page for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02binladen-web2/02binladen-web2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "The compound where Osama Bin Laden was killed in Abbottabad, Pakistan, in 2011.",
+copyright: "Warrick Page for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02binladen-web2/02binladen-web2-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "The compound where Osama Bin Laden was killed in Abbottabad, Pakistan, in 2011.",
+copyright: "Warrick Page for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02binladen-web2/02binladen-web2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "The compound where Osama Bin Laden was killed in Abbottabad, Pakistan, in 2011.",
+copyright: "Warrick Page for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02binladen-web2/02binladen-web2-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "The compound where Osama Bin Laden was killed in Abbottabad, Pakistan, in 2011.",
+copyright: "Warrick Page for The New York Times"
+}
+]
+},
+{
+section: "World",
+subsection: "Middle East",
+title: "Violence Erupts After 2 Israeli Soldiers Using Waze App Get Lost in West Bank",
+abstract: "A Palestinian man was killed after the soldiers, using Waze, a navigation tool, drove into the Kalandia refugee camp, prompting clashes and a gun battle.",
+url: "http://www.nytimes.com/2016/03/02/world/middleeast/waze-israel-soldiers-west-bank.html",
+byline: "By DIAA HADID",
+item_type: "Article",
+updated_date: "2016-03-01T10:09:13-5:00",
+created_date: "2016-03-01T10:09:19-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Defense and Military Forces"
+],
+org_facet: [
+"Waze Mobile"
+],
+per_facet: "",
+geo_facet: [
+"West Bank",
+"Israel"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Israel-web2/02Israel-web2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "A car burned during an Israeli Army raid the night before in the West Bank refugee camp of Kalandia on Tuesday.",
+copyright: "Atef Safadi/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Israel-web2/02Israel-web2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "A car burned during an Israeli Army raid the night before in the West Bank refugee camp of Kalandia on Tuesday.",
+copyright: "Atef Safadi/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Israel-web2/02Israel-web2-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "A car burned during an Israeli Army raid the night before in the West Bank refugee camp of Kalandia on Tuesday.",
+copyright: "Atef Safadi/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Israel-web2/02Israel-web2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "A car burned during an Israeli Army raid the night before in the West Bank refugee camp of Kalandia on Tuesday.",
+copyright: "Atef Safadi/European Pressphoto Agency"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Israel-web2/02Israel-web2-superJumbo.jpg",
+format: "superJumbo",
+height: 1364,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "A car burned during an Israeli Army raid the night before in the West Bank refugee camp of Kalandia on Tuesday.",
+copyright: "Atef Safadi/European Pressphoto Agency"
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "Spain’s Socialist Leader Has Chance, if Improbable, to Be Premier",
+abstract: "Pedro Sánchez looked like a spent political force after a dismal election showing, but a fractured Parliament could yet vote him into power.",
+url: "http://www.nytimes.com/2016/03/02/world/europe/pedro-sanchez-spain-prime-minister.html",
+byline: "By RAPHAEL MINDER",
+item_type: "Article",
+updated_date: "2016-03-01T08:34:58-5:00",
+created_date: "2016-03-01T08:35:01-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Elections",
+"Legislatures and Parliaments"
+],
+org_facet: [
+"Spanish Socialist Workers' Party"
+],
+per_facet: [
+"Sanchez Perez-Castejon, Pedro (1972- )"
+],
+geo_facet: [
+"Spain"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01sanchez-web1/01sanchez-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "The leader of the Socialist party, Pedro Sánchez, center, arriving at a news conference at the Spanish Parliament in Madrid last month.",
+copyright: "Susana Vera/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01sanchez-web1/01sanchez-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "The leader of the Socialist party, Pedro Sánchez, center, arriving at a news conference at the Spanish Parliament in Madrid last month.",
+copyright: "Susana Vera/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01sanchez-web1/01sanchez-web1-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "The leader of the Socialist party, Pedro Sánchez, center, arriving at a news conference at the Spanish Parliament in Madrid last month.",
+copyright: "Susana Vera/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01sanchez-web1/01sanchez-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "The leader of the Socialist party, Pedro Sánchez, center, arriving at a news conference at the Spanish Parliament in Madrid last month.",
+copyright: "Susana Vera/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01sanchez-web1/01sanchez-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1366,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "The leader of the Socialist party, Pedro Sánchez, center, arriving at a news conference at the Spanish Parliament in Madrid last month.",
+copyright: "Susana Vera/Reuters"
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "Britain Drops Case Against Last Suspect in 1998 Omagh Bombing",
+abstract: "Charges against Seamus Daly over the attack in Northern Ireland that killed 29 were withdrawn because of doubts over the reliability of crucial evidence.",
+url: "http://www.nytimes.com/2016/03/02/world/europe/seamus-daly-omagh-bombing.html",
+byline: "By DOUGLAS DALBY",
+item_type: "Article",
+updated_date: "2016-03-01T11:08:45-5:00",
+created_date: "2016-03-01T07:54:38-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Bombs and Explosives"
+],
+org_facet: [
+"Real IRA"
+],
+per_facet: [
+"Seamus Daly"
+],
+geo_facet: [
+"Omagh (Northern Ireland)",
+"Northern Ireland"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Nireland-web2/02Nireland-web2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Seamus Daly at the Magistrates’ Court in Omagh, Northern Ireland, in February.",
+copyright: "Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Nireland-web2/02Nireland-web2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Seamus Daly at the Magistrates’ Court in Omagh, Northern Ireland, in February.",
+copyright: "Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Nireland-web2/02Nireland-web2-articleInline.jpg",
+format: "Normal",
+height: 254,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Seamus Daly at the Magistrates’ Court in Omagh, Northern Ireland, in February.",
+copyright: "Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Nireland-web2/02Nireland-web2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Seamus Daly at the Magistrates’ Court in Omagh, Northern Ireland, in February.",
+copyright: "Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02Nireland-web2/02Nireland-web2-superJumbo.jpg",
+format: "superJumbo",
+height: 727,
+width: 544,
+type: "image",
+subtype: "photo",
+caption: "Seamus Daly at the Magistrates’ Court in Omagh, Northern Ireland, in February.",
+copyright: "Reuters"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "In a Harvard Scholar’s 18th-Century History, Glimpses of Modern China",
+abstract: "The Harvard historian Philip A. Kuhn’s book on a 1768 sorcery scare has drawn parallels to today’s China, and his death has revived the questions he posed.",
+url: "http://www.nytimes.com/2016/03/02/world/asia/philip-kuhn-china-harvard.html",
+byline: "By KIKI ZHAO",
+item_type: "Article",
+updated_date: "2016-03-01T07:23:04-5:00",
+created_date: "2016-03-01T07:23:07-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Soulstealers: The Chinese Sorcery Scare of 1768 (Book)",
+"Books and Literature",
+"History (Academic Subject)"
+],
+org_facet: [
+"Harvard University Press"
+],
+per_facet: [
+"Philip A. Kuhn"
+],
+geo_facet: [
+"China"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02chinakuhn-web1/02chinakuhn-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Red Guards brandishing Mao Zedong’s writings demonstrating in front of the Soviet Embassy in Beijing on Aug. 29, 1966. In a postscript to a Chinese translation of Philip A. Kuhn’s “Soulstealers: The Chinese Sorcery Scare of 1768,” the historian Liu Chang drew parallels between the mass hysteria of the 18th century and Mao’s Cultural Revolution.",
+copyright: "Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02chinakuhn-web1/02chinakuhn-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Red Guards brandishing Mao Zedong’s writings demonstrating in front of the Soviet Embassy in Beijing on Aug. 29, 1966. In a postscript to a Chinese translation of Philip A. Kuhn’s “Soulstealers: The Chinese Sorcery Scare of 1768,” the historian Liu Chang drew parallels between the mass hysteria of the 18th century and Mao’s Cultural Revolution.",
+copyright: "Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02chinakuhn-web1/02chinakuhn-web1-articleInline.jpg",
+format: "Normal",
+height: 132,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Red Guards brandishing Mao Zedong’s writings demonstrating in front of the Soviet Embassy in Beijing on Aug. 29, 1966. In a postscript to a Chinese translation of Philip A. Kuhn’s “Soulstealers: The Chinese Sorcery Scare of 1768,” the historian Liu Chang drew parallels between the mass hysteria of the 18th century and Mao’s Cultural Revolution.",
+copyright: "Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02chinakuhn-web1/02chinakuhn-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Red Guards brandishing Mao Zedong’s writings demonstrating in front of the Soviet Embassy in Beijing on Aug. 29, 1966. In a postscript to a Chinese translation of Philip A. Kuhn’s “Soulstealers: The Chinese Sorcery Scare of 1768,” the historian Liu Chang drew parallels between the mass hysteria of the 18th century and Mao’s Cultural Revolution.",
+copyright: "Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02chinakuhn-web1/02chinakuhn-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1421,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Red Guards brandishing Mao Zedong’s writings demonstrating in front of the Soviet Embassy in Beijing on Aug. 29, 1966. In a postscript to a Chinese translation of Philip A. Kuhn’s “Soulstealers: The Chinese Sorcery Scare of 1768,” the historian Liu Chang drew parallels between the mass hysteria of the 18th century and Mao’s Cultural Revolution.",
+copyright: "Associated Press"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Q. and A.: Zhang Fan on Chinese ‘Parachute Kids’ in the U.S.",
+abstract: "Zhang Fan, whose son is in prison for a grisly assault in California, discusses the problems faced by youths sent to the United States for better opportunities.",
+url: "http://www.nytimes.com/2016/03/02/world/asia/china-parachute-kids-california.html",
+byline: "By CAO LI",
+item_type: "Article",
+updated_date: "2016-03-01T06:05:08-5:00",
+created_date: "2016-03-01T06:05:10-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "Question",
+kicker: "",
+des_facet: [
+"Chinese-Americans",
+"Assaults",
+"Kidnapping and Hostages",
+"International Study and Teaching"
+],
+org_facet: "",
+per_facet: [
+"Zhang, Xinlei",
+"Yang, Yuhan",
+"Zhai, Yunyao",
+"Liu, Yiran"
+],
+geo_facet: [
+"China",
+"Los Angeles (Calif)",
+"Rowland Heights (Calif)"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/04/world/asia/xxchinaparachute/xxchinaparachute-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Zhang Xinlei arriving for his sentencing hearing at the Los Angeles County Superior Court on Feb. 17.",
+copyright: "Ni Kexin/US News Express"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/04/world/asia/xxchinaparachute/xxchinaparachute-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Zhang Xinlei arriving for his sentencing hearing at the Los Angeles County Superior Court on Feb. 17.",
+copyright: "Ni Kexin/US News Express"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/04/world/asia/xxchinaparachute/xxchinaparachute-articleInline.jpg",
+format: "Normal",
+height: 126,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Zhang Xinlei arriving for his sentencing hearing at the Los Angeles County Superior Court on Feb. 17.",
+copyright: "Ni Kexin/US News Express"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/04/world/asia/xxchinaparachute/xxchinaparachute-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Zhang Xinlei arriving for his sentencing hearing at the Los Angeles County Superior Court on Feb. 17.",
+copyright: "Ni Kexin/US News Express"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/04/world/asia/xxchinaparachute/xxchinaparachute-superJumbo.jpg",
+format: "superJumbo",
+height: 1362,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Zhang Xinlei arriving for his sentencing hearing at the Los Angeles County Superior Court on Feb. 17.",
+copyright: "Ni Kexin/US News Express"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Chinese Court Upholds Life Sentence for Top Aide to Bo Xilai",
+abstract: "The court rejected an appeal by the aide, Wu Wenkang, who had been given a life sentence by a lower court in late 2014.",
+url: "http://www.nytimes.com/2016/03/02/world/asia/china-bo-xilai-aide-wu-wenkang.html",
+byline: "By EDWARD WONG",
+item_type: "Article",
+updated_date: "2016-03-01T04:11:58-5:00",
+created_date: "2016-03-01T04:12:00-5:00",
+published_date: "2016-03-02T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: "",
+org_facet: [
+"Communist Party of China"
+],
+per_facet: [
+"Wu, Wenkang",
+"Bo Xilai",
+"Gu Kailai"
+],
+geo_facet: [
+"Jilin City (China)",
+"Chongqing (China)",
+"Dalian (China)"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02china-web1/02china-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Bo Xilai, center, who was once among China’s top-ranking Communist Party leaders, listening to his verdict in Jinan, in Shandong Province, in 2013.",
+copyright: "Jinan Intermediate People's Court, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02china-web1/02china-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Bo Xilai, center, who was once among China’s top-ranking Communist Party leaders, listening to his verdict in Jinan, in Shandong Province, in 2013.",
+copyright: "Jinan Intermediate People's Court, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02china-web1/02china-web1-articleInline.jpg",
+format: "Normal",
+height: 124,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Bo Xilai, center, who was once among China’s top-ranking Communist Party leaders, listening to his verdict in Jinan, in Shandong Province, in 2013.",
+copyright: "Jinan Intermediate People's Court, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02china-web1/02china-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Bo Xilai, center, who was once among China’s top-ranking Communist Party leaders, listening to his verdict in Jinan, in Shandong Province, in 2013.",
+copyright: "Jinan Intermediate People's Court, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/02/world/02china-web1/02china-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1333,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Bo Xilai, center, who was once among China’s top-ranking Communist Party leaders, listening to his verdict in Jinan, in Shandong Province, in 2013.",
+copyright: "Jinan Intermediate People's Court, via Reuters"
+}
+]
+},
+{
+section: "U.S.",
+subsection: "Politics",
+title: "Utilities Cautioned About Potential for a Cyberattack After Ukraine’s",
+abstract: "Working remotely, attackers conducted “extensive reconnaissance” of the Ukraine power system’s networks, stole the credentials of operators and learned how to switch off the breakers, plunging more than 225,000 Ukrainians into darkness.",
+url: "http://www.nytimes.com/2016/03/01/us/politics/utilities-cautioned-about-potential-for-a-cyberattack-after-ukraines.html",
+byline: "By DAVID E. SANGER",
+item_type: "Article",
+updated_date: "2016-02-29T21:08:51-5:00",
+created_date: "2016-02-29T21:08:53-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Cyberwarfare and Defense",
+"Power Failures and Blackouts",
+"Cyberattacks and Hackers"
+],
+org_facet: [
+"Homeland Security Department"
+],
+per_facet: [
+"Obama, Barack"
+],
+geo_facet: [
+"United States",
+"Ukraine",
+"Russia"
+],
+multimedia: ""
+},
+{
+section: "World",
+subsection: "Middle East",
+title: "After Gains Against ISIS, Pentagon Focuses on Mosul",
+abstract: "The United States military is laying groundwork for a fight to retake Iraq’s second-largest city, moving to isolate it from the Islamic State’s headquarters in Syria.",
+url: "http://www.nytimes.com/2016/03/01/world/middleeast/after-gains-against-isis-american-focus-is-turning-to-mosul.html",
+byline: "By HELENE COOPER and MATTHEW ROSENBERG",
+item_type: "Article",
+updated_date: "2016-02-29T20:50:57-5:00",
+created_date: "2016-02-29T20:50:59-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"United States Defense and Military Forces"
+],
+org_facet: [
+"Islamic State in Iraq and Syria (ISIS)",
+"Defense Department"
+],
+per_facet: "",
+geo_facet: [
+"Mosul (Iraq)",
+"Syria"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01MILITARY-web2/01MILITARY-web2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Iraqi soldiers during an exercise in January with American and Spanish trainers southeast of Baghdad.",
+copyright: "Karim Kadim/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01MILITARY-web2/01MILITARY-web2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Iraqi soldiers during an exercise in January with American and Spanish trainers southeast of Baghdad.",
+copyright: "Karim Kadim/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01MILITARY-web2/01MILITARY-web2-articleInline.jpg",
+format: "Normal",
+height: 129,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Iraqi soldiers during an exercise in January with American and Spanish trainers southeast of Baghdad.",
+copyright: "Karim Kadim/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01MILITARY-web2/01MILITARY-web2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Iraqi soldiers during an exercise in January with American and Spanish trainers southeast of Baghdad.",
+copyright: "Karim Kadim/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01MILITARY-web2/01MILITARY-web2-superJumbo.jpg",
+format: "superJumbo",
+height: 1391,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Iraqi soldiers during an exercise in January with American and Spanish trainers southeast of Baghdad.",
+copyright: "Karim Kadim/Associated Press"
+}
+]
+},
+{
+section: "Business Day",
+subsection: "DealBook",
+title: "‘Brexit’ Vote and Donald Trump’s Surge Reflect Discontent",
+abstract: "The outcome of Britain’s June 23 referendum is murky, but moves toward more extreme solutions may reflect a global sense of helplessness seen elsewhere.",
+url: "http://www.nytimes.com/2016/03/01/business/dealbook/brexit-vote-and-donald-trumps-surge-reflect-discontent.html",
+byline: "By ANDREW ROSS SORKIN",
+item_type: "Article",
+updated_date: "2016-02-29T20:42:49-5:00",
+created_date: "2016-02-29T20:42:51-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"United States Politics and Government",
+"Banking and Financial Institutions",
+"International Trade and World Market",
+"European Sovereign Debt Crisis (2010- )"
+],
+org_facet: [
+"European Union"
+],
+per_facet: [
+"Cameron, David"
+],
+geo_facet: [
+"Great Britain"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-sorkin1/db-sorkin1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Mervyn King, the former governor of the Bank of England.",
+copyright: "Oli Scarff/Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-sorkin1/db-sorkin1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Mervyn King, the former governor of the Bank of England.",
+copyright: "Oli Scarff/Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-sorkin1/db-sorkin1-articleInline.jpg",
+format: "Normal",
+height: 133,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Mervyn King, the former governor of the Bank of England.",
+copyright: "Oli Scarff/Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-sorkin1/db-sorkin1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Mervyn King, the former governor of the Bank of England.",
+copyright: "Oli Scarff/Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-sorkin1/db-sorkin1-superJumbo.jpg",
+format: "superJumbo",
+height: 1434,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Mervyn King, the former governor of the Bank of England.",
+copyright: "Oli Scarff/Getty Images"
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "George Pell, Aide to Pope, Is Put on Defensive in Abuse Inquiry",
+abstract: "Cardinal Pell, chosen by Francis to spearhead Vatican financial reform, is testifying voluntarily before a Royal Commission looking into child sexual abuse.",
+url: "http://www.nytimes.com/2016/03/01/world/europe/australian-inquiry-puts-a-top-aide-to-pope-on-the-defensive.html",
+byline: "By ELISABETTA POVOLEDO",
+item_type: "Article",
+updated_date: "2016-02-29T18:01:05-5:00",
+created_date: "2016-02-29T18:01:07-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Priests",
+"Sex Crimes",
+"Child Abuse and Neglect"
+],
+org_facet: "",
+per_facet: [
+"Francis",
+"Pell, George (1941- )"
+],
+geo_facet: [
+"Rome (Italy)"
+],
+multimedia: ""
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Parents of American Held in North Korea Unable to Speak With Him",
+abstract: "In their first comment on the arrest, the parents of Otto F. Warmbier said they hoped North Korea would free him after he admitted stealing a political banner.",
+url: "http://www.nytimes.com/2016/03/01/world/asia/north-korea-otto-warmbier.html",
+byline: "By RICK GLADSTONE and CHOE SANG-HUN",
+item_type: "Article",
+updated_date: "2016-02-29T16:39:59-5:00",
+created_date: "2016-02-29T15:33:06-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Nuclear Weapons",
+"International Relations"
+],
+org_facet: "",
+per_facet: [
+"Warmbier, Otto Frederick (1994- )"
+],
+geo_facet: [
+"North Korea",
+"United States"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01NKOREA-web1/01NKOREA-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Otto F. Warmbier on Monday apologized on North Korean state television in Pyongyang.",
+copyright: "Kyodo, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01NKOREA-web1/01NKOREA-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Otto F. Warmbier on Monday apologized on North Korean state television in Pyongyang.",
+copyright: "Kyodo, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01NKOREA-web1/01NKOREA-web1-articleInline.jpg",
+format: "Normal",
+height: 128,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Otto F. Warmbier on Monday apologized on North Korean state television in Pyongyang.",
+copyright: "Kyodo, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01NKOREA-web1/01NKOREA-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Otto F. Warmbier on Monday apologized on North Korean state television in Pyongyang.",
+copyright: "Kyodo, via Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01NKOREA-web1/01NKOREA-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1380,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Otto F. Warmbier on Monday apologized on North Korean state television in Pyongyang.",
+copyright: "Kyodo, via Reuters"
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "France Faces Protests as It Dismantles ‘Jungle’ Migrant Camp",
+abstract: "Some migrants lit shacks on fire to protest their evictions as workers tore down tents and disassembled huts at the camp near Calais.",
+url: "http://www.nytimes.com/2016/03/01/world/europe/france-faces-protests-as-it-dismantles-jungle-migrant-camp.html",
+byline: "By AURELIEN BREEDEN",
+item_type: "Article",
+updated_date: "2016-02-29T15:00:55-5:00",
+created_date: "2016-02-29T15:00:57-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Demonstrations, Protests and Riots",
+"Middle East and Africa Migrant Crisis",
+"Evictions",
+"Police"
+],
+org_facet: "",
+per_facet: "",
+geo_facet: [
+"Calais (France)",
+"Great Britain"
+],
+multimedia: ""
+},
+{
+section: "World",
+subsection: "Europe",
+title: "Hope and Fear Await a Basque Leader on His Release From Prison",
+abstract: "The release of Arnaldo Otegi — jailed for his ties to an outlawed political party — and what it might mean for the Basque cause is raising alarm in Spain.",
+url: "http://www.nytimes.com/2016/03/01/world/europe/hope-and-fear-await-a-basque-leader-on-his-release-from-prison.html",
+byline: "By RAPHAEL MINDER",
+item_type: "Article",
+updated_date: "2016-02-29T13:38:21-5:00",
+created_date: "2016-02-29T13:38:23-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Basques",
+"Terrorism",
+"Human Rights and Human Rights Violations"
+],
+org_facet: [
+"Basque Nationalist Party",
+"Batasuna",
+"ETA"
+],
+per_facet: "",
+geo_facet: "",
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01PRISONER-web1/01PRISONER-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Arnaldo Otegi, a leader of the Basque separatist movement, during his arrest in San Sebastián, Spain, in 2009.",
+copyright: "Rafa Rivas/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01PRISONER-web1/01PRISONER-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Arnaldo Otegi, a leader of the Basque separatist movement, during his arrest in San Sebastián, Spain, in 2009.",
+copyright: "Rafa Rivas/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01PRISONER-web1/01PRISONER-web1-articleInline.jpg",
+format: "Normal",
+height: 140,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Arnaldo Otegi, a leader of the Basque separatist movement, during his arrest in San Sebastián, Spain, in 2009.",
+copyright: "Rafa Rivas/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01PRISONER-web1/01PRISONER-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Arnaldo Otegi, a leader of the Basque separatist movement, during his arrest in San Sebastián, Spain, in 2009.",
+copyright: "Rafa Rivas/Agence France-Presse — Getty Images"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01PRISONER-web1/01PRISONER-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1513,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Arnaldo Otegi, a leader of the Basque separatist movement, during his arrest in San Sebastián, Spain, in 2009.",
+copyright: "Rafa Rivas/Agence France-Presse — Getty Images"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Narendra Modi Struggles to Fulfill His Plan to Rejuvenate India",
+abstract: "The prime minister’s pledge to revitalize the economy and create a deluge of jobs has become subsumed in political turmoil.",
+url: "http://www.nytimes.com/2016/03/01/world/asia/narendra-modi-india.html",
+byline: "By GEETA ANAND",
+item_type: "Article",
+updated_date: "2016-02-29T11:37:39-5:00",
+created_date: "2016-02-29T11:37:41-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Demonstrations, Protests and Riots",
+"Economic Conditions and Trends",
+"Labor and Jobs"
+],
+org_facet: [
+"Bharatiya Janata Party"
+],
+per_facet: [
+"Modi, Narendra"
+],
+geo_facet: [
+"India"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01India-web/01India-web-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Prime Minister Narendra Modi in New Delhi in January. Experts say India is missing out on foreign investment because his budgets have not called for major structural reforms.",
+copyright: "Bernat Armangue/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01India-web/01India-web-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Prime Minister Narendra Modi in New Delhi in January. Experts say India is missing out on foreign investment because his budgets have not called for major structural reforms.",
+copyright: "Bernat Armangue/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01India-web/01India-web-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Prime Minister Narendra Modi in New Delhi in January. Experts say India is missing out on foreign investment because his budgets have not called for major structural reforms.",
+copyright: "Bernat Armangue/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01India-web/01India-web-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Prime Minister Narendra Modi in New Delhi in January. Experts say India is missing out on foreign investment because his budgets have not called for major structural reforms.",
+copyright: "Bernat Armangue/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01India-web/01India-web-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Prime Minister Narendra Modi in New Delhi in January. Experts say India is missing out on foreign investment because his budgets have not called for major structural reforms.",
+copyright: "Bernat Armangue/Associated Press"
+}
+]
+},
+{
+section: "Business Day",
+subsection: "DealBook",
+title: "Argentina Reaches Deal With Hedge Funds Over Debt",
+abstract: "The funds declared legal war on Argentina 12 years ago, refusing to partake in the country’s restructurings after it defaulted on $100 billion of debt in 2001.",
+url: "http://www.nytimes.com/2016/03/01/business/dealbook/argentina-reaches-deal-with-hedge-funds-over-debt.html",
+byline: "By ALEXANDRA STEVENSON and JONATHAN GILBERT",
+item_type: "Article",
+updated_date: "2016-02-29T20:26:42-5:00",
+created_date: "2016-02-29T10:53:28-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Hedge Funds"
+],
+org_facet: "",
+per_facet: [
+"Griesa, Thomas P",
+"Singer, Paul E",
+"Macri, Mauricio"
+],
+geo_facet: [
+"Argentina"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/01db-argentina2/01db-argentina2-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "“This is a giant step forward in this long-running litigation,” Daniel A. Pollack, the court-appointed mediator, said on Monday. But, he added, it is “not the final step.”",
+copyright: "Louis Lanzano for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/01db-argentina2/01db-argentina2-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "“This is a giant step forward in this long-running litigation,” Daniel A. Pollack, the court-appointed mediator, said on Monday. But, he added, it is “not the final step.”",
+copyright: "Louis Lanzano for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/01db-argentina2/01db-argentina2-articleInline.jpg",
+format: "Normal",
+height: 126,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "“This is a giant step forward in this long-running litigation,” Daniel A. Pollack, the court-appointed mediator, said on Monday. But, he added, it is “not the final step.”",
+copyright: "Louis Lanzano for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/01db-argentina2/01db-argentina2-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "“This is a giant step forward in this long-running litigation,” Daniel A. Pollack, the court-appointed mediator, said on Monday. But, he added, it is “not the final step.”",
+copyright: "Louis Lanzano for The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/01db-argentina2/01db-argentina2-superJumbo.jpg",
+format: "superJumbo",
+height: 1354,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "“This is a giant step forward in this long-running litigation,” Daniel A. Pollack, the court-appointed mediator, said on Monday. But, he added, it is “not the final step.”",
+copyright: "Louis Lanzano for The New York Times"
+}
+]
+},
+{
+section: "Business Day",
+subsection: "DealBook",
+title: "Souq, Online Retailer in Middle East, Gets a $275 Million Boost",
+abstract: "The company, based in the United Arab Emirates, is a rare e-commerce success story in a region that has been hit by logistical, political and economic hurdles.",
+url: "http://www.nytimes.com/2016/03/01/business/dealbook/souq-online-retailer.html",
+byline: "By SARA HAMDAN",
+item_type: "Article",
+updated_date: "2016-02-29T10:12:54-5:00",
+created_date: "2016-02-29T10:12:56-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"E-Commerce",
+"Shopping and Retail",
+"Venture Capital"
+],
+org_facet: [
+"Souq.com FZ-LLC",
+"Souq"
+],
+per_facet: "",
+geo_facet: [
+"United Arab Emirates"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-souq1/db-souq1-thumbStandard.png",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "The online retailer Souq.com is based in the United Arab Emirates.",
+copyright: ""
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-souq1/db-souq1-thumbLarge.png",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "The online retailer Souq.com is based in the United Arab Emirates.",
+copyright: ""
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-souq1/db-souq1-articleInline.png",
+format: "Normal",
+height: 175,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "The online retailer Souq.com is based in the United Arab Emirates.",
+copyright: ""
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-souq1/db-souq1-mediumThreeByTwo210.png",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "The online retailer Souq.com is based in the United Arab Emirates.",
+copyright: ""
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/business/db-souq1/db-souq1-superJumbo.png",
+format: "superJumbo",
+height: 1263,
+width: 1375,
+type: "image",
+subtype: "photo",
+caption: "The online retailer Souq.com is based in the United Arab Emirates.",
+copyright: ""
+}
+]
+},
+{
+section: "World",
+subsection: "Europe",
+title: "Woman Waving Child’s Severed Head Is Arrested in Moscow",
+abstract: "Witnesses said a woman waved the severed head of a small child outside a Moscow subway station on Monday.",
+url: "http://www.nytimes.com/2016/03/01/world/europe/woman-waving-childs-severed-head-is-arrested-in-moscow.html",
+byline: "By IVAN NECHEPURENKO",
+item_type: "Article",
+updated_date: "2016-02-29T10:00:41-5:00",
+created_date: "2016-02-29T10:00:42-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Murders, Attempted Murders and Homicides",
+"Mental Health and Disorders"
+],
+org_facet: "",
+per_facet: [
+"Bobokulova, Gulchekhra"
+],
+geo_facet: [
+"Moscow (Russia)"
+],
+multimedia: ""
+},
+{
+section: "World",
+subsection: "Africa",
+title: "Muslim Enclave Forged in Apartheid Now Faces Gentrification",
+abstract: "Residents of the vibrant and historic Bo-Kaap neighborhood fear that their traditions and close-knit community are at risk as money pours in.",
+url: "http://www.nytimes.com/2016/03/01/world/africa/bo-kaap-cape-town-muslim-gentrification.html",
+byline: "By NORIMITSU ONISHI",
+item_type: "Article",
+updated_date: "2016-02-29T09:30:16-5:00",
+created_date: "2016-02-29T09:30:18-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Apartheid (Policy)",
+"Gentrification",
+"Race and Ethnicity",
+"Muslims and Islam",
+"Segregation and Desegregation"
+],
+org_facet: "",
+per_facet: "",
+geo_facet: [
+"Cape Town (South Africa)",
+"South Africa"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/02/29/world/01CAPETOWN-web1/01CAPETOWN-web1-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "The Bo-Kaap district was traditionally home to descendants of slaves from other African nations, India, Indonesia and Malaysia.",
+copyright: "Joao Silva/The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/29/world/01CAPETOWN-web1/01CAPETOWN-web1-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "The Bo-Kaap district was traditionally home to descendants of slaves from other African nations, India, Indonesia and Malaysia.",
+copyright: "Joao Silva/The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/29/world/01CAPETOWN-web1/01CAPETOWN-web1-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "The Bo-Kaap district was traditionally home to descendants of slaves from other African nations, India, Indonesia and Malaysia.",
+copyright: "Joao Silva/The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/29/world/01CAPETOWN-web1/01CAPETOWN-web1-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "The Bo-Kaap district was traditionally home to descendants of slaves from other African nations, India, Indonesia and Malaysia.",
+copyright: "Joao Silva/The New York Times"
+},
+{
+url: "http://static01.nyt.com/images/2016/02/29/world/01CAPETOWN-web1/01CAPETOWN-web1-superJumbo.jpg",
+format: "superJumbo",
+height: 1367,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "The Bo-Kaap district was traditionally home to descendants of slaves from other African nations, India, Indonesia and Malaysia.",
+copyright: "Joao Silva/The New York Times"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Mahathir Mohamad Quits Malaysia’s Governing Party, Citing Corruption",
+abstract: "The former prime minister said he was embarrassed by the role of the United Malays National Organization in protecting the country’s current leader from accusations of graft.",
+url: "http://www.nytimes.com/2016/03/01/world/asia/mahathir-mohamad-malaysia-quits-umno.html",
+byline: "By RICHARD C. PADDOCK",
+item_type: "Article",
+updated_date: "2016-02-29T09:23:13-5:00",
+created_date: "2016-02-29T09:23:15-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Ethics and Official Misconduct",
+"Appointments and Executive Changes"
+],
+org_facet: [
+"United Malays National Organization"
+],
+per_facet: [
+"Mohamad, Mahathir",
+"Najib Razak"
+],
+geo_facet: [
+"Malaysia"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Malaysia-web/01Malaysia-web-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Mahathir Mohamad, the former prime minister of Malaysia, on Monday.",
+copyright: "Joshua Paul/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Malaysia-web/01Malaysia-web-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Mahathir Mohamad, the former prime minister of Malaysia, on Monday.",
+copyright: "Joshua Paul/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Malaysia-web/01Malaysia-web-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Mahathir Mohamad, the former prime minister of Malaysia, on Monday.",
+copyright: "Joshua Paul/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Malaysia-web/01Malaysia-web-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Mahathir Mohamad, the former prime minister of Malaysia, on Monday.",
+copyright: "Joshua Paul/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Malaysia-web/01Malaysia-web-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Mahathir Mohamad, the former prime minister of Malaysia, on Monday.",
+copyright: "Joshua Paul/Associated Press"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Japan Indicts 3 Former Executives Over Fukushima Nuclear Disaster",
+abstract: "The indictments were the first stemming from the event, which spread radiation across a wide area in the country’s northeast and led to evacuations that left more than 100,000 homeless.",
+url: "http://www.nytimes.com/2016/03/01/world/asia/japan-indicts-3-former-executives-over-fukushima-nuclear-disaster.html",
+byline: "By JONATHAN SOBLE",
+item_type: "Article",
+updated_date: "2016-02-29T08:51:05-5:00",
+created_date: "2016-02-29T08:51:06-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Fukushima Daiichi Nuclear Power Plant (Japan)",
+"Suits and Litigation (Civil)",
+"Japan Earthquake and Tsunami (2011)"
+],
+org_facet: [
+"Tokyo Electric Power Co"
+],
+per_facet: [
+"Katsumata, Tsunehisa",
+"Muto, Sakae",
+"Takekuro, Ichiro"
+],
+geo_facet: "",
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Japan-web/01Japan-web-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "Storage tanks for radioactive water at the Fukushima Daiichi Nuclear Power Station in Japan.",
+copyright: "Toru Hanai/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Japan-web/01Japan-web-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "Storage tanks for radioactive water at the Fukushima Daiichi Nuclear Power Station in Japan.",
+copyright: "Toru Hanai/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Japan-web/01Japan-web-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "Storage tanks for radioactive water at the Fukushima Daiichi Nuclear Power Station in Japan.",
+copyright: "Toru Hanai/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Japan-web/01Japan-web-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "Storage tanks for radioactive water at the Fukushima Daiichi Nuclear Power Station in Japan.",
+copyright: "Toru Hanai/Reuters"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01Japan-web/01Japan-web-superJumbo.jpg",
+format: "superJumbo",
+height: 1365,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "Storage tanks for radioactive water at the Fukushima Daiichi Nuclear Power Station in Japan.",
+copyright: "Toru Hanai/Reuters"
+}
+]
+},
+{
+section: "World",
+subsection: "Asia Pacific",
+title: "Hong Kong Bookseller Confesses on TV to Evading Rules on Shipping to Mainland",
+abstract: "Gui Minhai was shown on Sunday night saying that he had circumvented China’s strict rules on importing books, in part by placing shipments in bags that could not be X-rayed.",
+url: "http://www.nytimes.com/2016/03/01/world/asia/hong-kong-bookseller-gui-minhai.html",
+byline: "By AUSTIN RAMZY",
+item_type: "Article",
+updated_date: "2016-02-29T08:01:02-5:00",
+created_date: "2016-02-29T08:01:04-5:00",
+published_date: "2016-03-01T00:00:00-5:00",
+material_type_facet: "News",
+kicker: "",
+des_facet: [
+"Book Trade and Publishing",
+"Ships and Shipping"
+],
+org_facet: [
+"Mighty Current Media",
+"Phoenix Satellite Television Holdings Ltd"
+],
+per_facet: [
+"Gui Minhai"
+],
+geo_facet: [
+"Hong Kong",
+"China"
+],
+multimedia: [
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01HongKong-web/01HongKong-web-thumbStandard.jpg",
+format: "Standard Thumbnail",
+height: 75,
+width: 75,
+type: "image",
+subtype: "photo",
+caption: "A picture of the publisher Gui Minhai that protesters placed outside the Liaison of the Central People’s Government in Hong Kong in January.",
+copyright: "Vincent Yu/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01HongKong-web/01HongKong-web-thumbLarge.jpg",
+format: "thumbLarge",
+height: 150,
+width: 150,
+type: "image",
+subtype: "photo",
+caption: "A picture of the publisher Gui Minhai that protesters placed outside the Liaison of the Central People’s Government in Hong Kong in January.",
+copyright: "Vincent Yu/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01HongKong-web/01HongKong-web-articleInline.jpg",
+format: "Normal",
+height: 127,
+width: 190,
+type: "image",
+subtype: "photo",
+caption: "A picture of the publisher Gui Minhai that protesters placed outside the Liaison of the Central People’s Government in Hong Kong in January.",
+copyright: "Vincent Yu/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01HongKong-web/01HongKong-web-mediumThreeByTwo210.jpg",
+format: "mediumThreeByTwo210",
+height: 140,
+width: 210,
+type: "image",
+subtype: "photo",
+caption: "A picture of the publisher Gui Minhai that protesters placed outside the Liaison of the Central People’s Government in Hong Kong in January.",
+copyright: "Vincent Yu/Associated Press"
+},
+{
+url: "http://static01.nyt.com/images/2016/03/01/world/01HongKong-web/01HongKong-web-superJumbo.jpg",
+format: "superJumbo",
+height: 1367,
+width: 2048,
+type: "image",
+subtype: "photo",
+caption: "A picture of the publisher Gui Minhai that protesters placed outside the Liaison of the Central People’s Government in Hong Kong in January.",
+copyright: "Vincent Yu/Associated Press"
+}
+]
+}
+]
+}
