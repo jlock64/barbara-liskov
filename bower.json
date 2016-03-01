@@ -1,0 +1,24 @@
+{
+  "name": "top stories web app",
+  "homepage": "https://github.com/jlock64/barbara-liskov",
+  "authors": [
+    "Justin Lock"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "underscore": "^1.8.3",
+    "moment": "^2.11.2",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
