@@ -16,7 +16,7 @@ var page = {
     },
     initEvents: function() {
         // Click on Links
-        $('ul li').on('click', function(event) {
+        $('ul li').not('.fav').on('click', function(event) {
             event.preventDefault();
             var section = $(this).text();
             var link = page.clickedSection(section);
@@ -30,12 +30,21 @@ var page = {
             // console.log(userSubmit);
             page.searchResults(userSubmit);
         });
+        // change css when search bar clicked
         $('input[type="text"]').on('click', function() {
           $(this).css({
             "background-color": '#AA0000',
             'color': '#fff'
           });
-        })
+        });
+        // click favorite heart and display
+        $('.postWrapper').on('click', function(event) {
+          event.preventDefault();
+          console.log('clicked');
+          var favPost = $(this).closest('div').html();
+          $('.favSection').append(favPost);
+        });
+
     },
 
     clickedSection: function(section) {
@@ -71,7 +80,7 @@ var page = {
             url: page.buildUrl(),
             dataType: 'json',
             success: function(data) {
-                // window.glob = data;
+                window.glob = data;
                 page.addDataToPage(data);
                 page.dataStore.push(data);
             },
