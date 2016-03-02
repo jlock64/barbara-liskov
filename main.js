@@ -1,7 +1,6 @@
 $(document).ready(function() {
     page.init();
 });
-
 var page = {
     dataStore: [],
     favoriteStore: [],
@@ -33,73 +32,69 @@ var page = {
         });
         // change css when search bar clicked
         $('input[type="text"]').on('click', function() {
-          $(this).css({
-            "background-color": '#AA0000',
-            'color': '#fff'
-          });
+            $(this).css({
+                "background-color": '#AA0000',
+                'color': '#fff'
+            });
         });
+        $('.mainContainer').on('click', '.fa-heart-o', function(event) {
+                event.preventDefault();
+                console.log('I WAS CLICKED');
+                console.log('ive been clicked');
+                var indexOfOurTodo = $(this).parent().siblings(
+                    '.headline').text()
+                console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
+                var changeComplete = page.favoriteStore[0].filter(
+                    function(el) {
+                        return el.title === indexOfOurTodo;
+                    }).pop();
+                changeComplete.complete = !changeComplete.complete;
+                if (!changeComplete.complete) {} else {
+                    $(this).css('color', 'red');
+                }
+            })
+            //CLICK COMPLETED BUTTON AND ONLY SHOWS COMPLETED
+        $('header').on('click', '.fav', function(event) {
+            event.preventDefault();
+            var completed = _.where(page.favoriteStore[0], {
+                complete: true
+            });
 
-        $('.mainContainer').on('click', '.fa-heart-o', function(event){
-          event.preventDefault();
-          console.log('I WAS CLICKED');
-          console.log('ive been clicked');
-          var indexOfOurTodo = $(this).parent().siblings('.headline').text()
-          console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
-          var changeComplete = page.favoriteStore[0].filter(function(el) {
-            return el.title === indexOfOurTodo;
-          }).pop();
-          changeComplete.complete = !changeComplete.complete;
-          if(!changeComplete.complete) {
-
-      } else {
-
-        $(this).css('color', 'red');
-
-
-      }
-
-
-        })
-        //CLICK COMPLETED BUTTON AND ONLY SHOWS COMPLETED
-  $('header').on('click', '.fav', function (event) {
-    event.preventDefault();
-    var completed = _.where(page.favoriteStore[0],{complete: true});
-    function addAllLikes(arr) {
-      $('.mainContainer').html('');
-      _.each(completed, function (el) {
-
-        var tmpl = _.template(templates.post);
-    $('.mainContainer').append(tmpl(el));
-      })
-    }
-    addAllLikes(completed);
-  });
-
-
+            function addAllLikes(arr) {
+                $('.mainContainer').html('');
+                _.each(completed, function(el) {
+                    var tmpl = _.template(templates
+                        .post);
+                    $('.mainContainer').append(tmpl(
+                        el));
+                })
+            }
+            addAllLikes(completed);
+        });
     },
-
     clickedSection: function(section) {
-      return page.url + section + page.key;
-      // console.log(page.url + section + page.key);
+        return page.url + section + page.key;
+        // console.log(page.url + section + page.key);
     },
     searchResults: function(userSubmit) {
-      //had to create a literal variable to search case insensitive
-      var regex = new RegExp(userSubmit,'i');
-      console.log(regex);
-      var matchedObj = _.map(page.dataStore, function(object) {
-        var filteredObjs = _.filter(object, function(el){
-          return el.title.match(regex) || el.blurb.match(regex)
+        //had to create a literal variable to search case insensitive
+        var regex = new RegExp(userSubmit, 'i');
+        console.log(regex);
+        var matchedObj = _.map(page.dataStore, function(object) {
+            var filteredObjs = _.filter(object, function(el) {
+                return el.title.match(regex) || el.blurb
+                    .match(regex)
+            });
+            return filteredObjs;
         });
-        return filteredObjs;
-      });
-      $('div.mainContainer').html('');
-      _.each(matchedObj[0], function(el) {
-          var tmpl = _.template(templates.post);
-          $('div.mainContainer').append(tmpl(el));
-          $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
-
-      })
-},
+        $('div.mainContainer').html('');
+        _.each(matchedObj[0], function(el) {
+            var tmpl = _.template(templates.post);
+            $('div.mainContainer').append(tmpl(el));
+            $('.mainContainer').scrollTop($('.mainContainer')[0]
+                .scrollHeight);
+        })
+    },
     buildUrl: function() {
         return page.url + page.section + page.key;
     },
@@ -111,7 +106,6 @@ var page = {
             success: function(data) {
                 window.glob = data;
                 page.addDataToPage(data);
-
             },
             error: function(err) {
                 console.log(err)
@@ -130,7 +124,7 @@ var page = {
                 // console.log(newArr);
             },
             error: function(err) {
-                console.log('error!',err)
+                console.log('error!', err)
                 var tmpl = _.template(templates.err);
                 $('div.mainContainer').append(tmpl());
             }
@@ -166,11 +160,8 @@ var page = {
         _.each(filteredArr, function(el) {
             var tmpl = _.template(templates.post);
             $('div.mainContainer').append(tmpl(el));
-            $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
-
+            $('.mainContainer').scrollTop($('.mainContainer')[0]
+                .scrollHeight);
         })
     },
-
-
-
 }
