@@ -1,6 +1,7 @@
 $(document).ready(function() {
     page.init();
 });
+
 var page = {
     url: "http://api.nytimes.com/svc/topstories/v1/", //section
     section: "home",
@@ -106,6 +107,9 @@ var page = {
         _.each(filteredArr, function(el) {
             var tmpl = _.template(templates.post);
             $('div.mainContainer').append(tmpl(el));
+            $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
+
         })
     }
+
 }

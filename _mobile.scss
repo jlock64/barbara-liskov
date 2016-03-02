@@ -1,0 +1,135 @@
+@media (min-width: 0px ) and (max-width: 500px){
+
+  * {
+    box-sizing: border-box;
+  }
+  .fa{
+    align-self: center;
+    display: block;
+    color: #365C79;
+  }
+  .fa-heart-o{
+    font-weight: bold;
+  }
+
+  .mainContainer {
+    /* width: 70%; */
+/* margin: 15px auto; */
+overflow: hidden;
+position: relative;
+top: 12px;
+display: flex;
+flex-flow: column;
+/* justify-content: inherit; */
+/* align-items: stretch; */
+background-color: #F2F2F2;
+width:100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+      background-color: white;
+      box-shadow: none;
+      border-bottom: 1px solid grey;
+
+    z-index: 10000;
+    margin-top: -20px;
+      .fa{
+        display: block;
+      }
+      h1 {
+
+      }
+      h3 {
+        display:none;
+      }
+      .nav {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: none;
+      }
+      li {
+        display: none;
+      }
+      li:hover {
+        background-color: #fff;
+        // transform: scale(0.99);
+        cursor: pointer;
+        color: #aa0000;
+      }
+      input{
+        display: none;
+      }
+  }
+
+  div.postWrapper {
+    width: 111%;
+/* position: relative; */
+/* border-bottom: 1px solid lightgrey; */
+/* margin-bottom: 29px; */
+border-bottom: 1px solid #F2F2F2;
+margin-bottom: 1%;
+border-top: 1px solid #F2F2F2;
+background-color: white;
+padding-top: 4%;
+margin-left: -5.5%;
+display: flex;
+flex-flow: column;
+/* justify-content: flex-start; */
+/* align-items: flex-end; */
+    a {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 30px;
+      width: 100%;
+      padding-left: 15px;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      order: 3;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #AA0000;
+    }
+    img {
+      width: 100%;
+      box-shadow: none;
+// order: 1;
+    }
+    h1 {
+      font-size: 30px;
+      display: inline-block;
+      width: 100%;
+      padding-left: 15px;
+      vertical-align: top;
+      margin: 0;
+      color: #000;
+    }
+    h6 {
+      align-self: flex-end;
+margin-top: -1%;
+margin-right: 1%;
+position: static;
+// display: inline-block;
+margin: none;
+text-align: none;
+float: none;
+color: #555;
+padding-top: none;
+padding-left: none;
+
+    }
+    h3 {
+      margin-top: 5px;
+      color: #000;
+      font-weight: 400;
+      display: none;
+    }
+  }
+
+}
