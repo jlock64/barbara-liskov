@@ -15,5 +15,10 @@ var templates ={
       '<a href="#"<i class="fa fa-heart-o"></i></a>',
       '<h3><%= subsection %></h3>',
     '</div>'
-      ].join('')
+  ].join(''),
+  err: [
+    '<div class="postWrapper">',
+      '<h2>No Stories Found!</h2>',
+    '</div>'
+  ]
 }

@@ -42,6 +42,7 @@ var page = {
       return page.url + section + page.key;
       // console.log(page.url + section + page.key);
     },
+<<<<<<< HEAD
     searchResults: function(userSubmit) {
       console.log("THE KEYWORD", userSubmit);
       // console.log(page.dataStore);
@@ -61,7 +62,26 @@ var page = {
           var tmpl = _.template(templates.post);
           $('div.mainContainer').append(tmpl(el));
       });
-},
+=======
+
+    searchResults: function(userSubmit) {},
+    getSearchObj: function(data) {
+        return _.map(data.results, function(el) {
+            var imgUrl = "";
+            if (el.multimedia[3]) {
+                imgUrl = el.multimedia[3].url;
+            }
+            return {
+                title: el.title,
+                blurb: el.abstract,
+                url: el.url,
+                subsection: el.subsection,
+                date: moment(el.published_date).format('LL'),
+                image: imgUrl
+            }
+        })
+>>>>>>> 82ca02cbd81089564ad38f79c95f5c8515a47e0c
+    },
     buildUrl: function() {
         return page.url + page.section + page.key;
     },
@@ -80,7 +100,12 @@ var page = {
             }
         })
     },
+<<<<<<< HEAD
     linkedPage: function(link) {
+=======
+
+    newPage: function(link) {
+>>>>>>> 82ca02cbd81089564ad38f79c95f5c8515a47e0c
         $.ajax({
             method: 'GET',
             url: link,
