@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 var page = {
     dataStore: [],
+    favoriteStore: [],
     url: "http://api.nytimes.com/svc/topstories/v1/", //section
     section: "home",
     key: ".json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993",
@@ -16,7 +17,7 @@ var page = {
     },
     initEvents: function() {
         // Click on Links
-        $('ul li').on('click', function(event) {
+        $('ul li').not('.fav').on('click', function(event) {
             event.preventDefault();
             var section = $(this).text();
             var link = page.clickedSection(section);
@@ -35,7 +36,44 @@ var page = {
             "background-color": '#AA0000',
             'color': '#fff'
           });
+        });
+        $('.mainContainer').on('click', '.fa-heart-o', function(event){
+          event.preventDefault();
+          console.log('I WAS CLICKED');
+          console.log('ive been clicked');
+          var indexOfOurTodo = $(this).parent().siblings('.headline').text()
+          console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
+          var changeComplete = page.favoriteStore[0].filter(function(el) {
+            return el.title === indexOfOurTodo;
+          }).pop();
+          changeComplete.complete = !changeComplete.complete;
+          if(!changeComplete.complete) {
+
+      } else {
+
+        $(this).css('color', 'red');
+
+
+      }
+
+
         })
+        //CLICK COMPLETED BUTTON AND ONLY SHOWS COMPLETED
+  $('header').on('click', '.fav', function (event) {
+    event.preventDefault();
+    var completed = _.where(page.favoriteStore[0],{complete: true});
+    function addAllLikes(arr) {
+      $('.mainContainer').html('');
+      _.each(completed, function (el) {
+
+        var tmpl = _.template(templates.post);
+    $('.mainContainer').append(tmpl(el));
+      })
+    }
+    addAllLikes(completed);
+  });
+
+
     },
 
     clickedSection: function(section) {
@@ -73,7 +111,7 @@ var page = {
             success: function(data) {
                 // window.glob = data;
                 page.addDataToPage(data);
-                page.dataStore.push(data);
+                // page.dataStore.push(data);
             },
             error: function(err) {
                 console.log(err)
@@ -106,6 +144,7 @@ var page = {
                 imgUrl = el.multimedia[3].url;
             }
             return {
+                complete: false,
                 title: el.title,
                 blurb: el.abstract,
                 url: el.url,
@@ -117,6 +156,8 @@ var page = {
     },
     addDataToPage: function(dataObj) {
         var newArr = page.getDataObj(dataObj);
+        page.favoriteStore = [];
+        page.favoriteStore.push(newArr);
         var filteredArr = _.filter(newArr, function(el) {
             return el.image
         })
@@ -127,6 +168,8 @@ var page = {
             $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
 
         })
-    }
+    },
+
+
 
 }
