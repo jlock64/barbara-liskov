@@ -107,33 +107,9 @@ var page = {
         _.each(filteredArr, function(el) {
             var tmpl = _.template(templates.post);
             $('div.mainContainer').append(tmpl(el));
+            $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
+
         })
     }
-  })
-},
-
-
-addDataToPage: function(dataObj){
-  var newArr = page.getDataObj(dataObj);
-  var filteredArr = _.filter(newArr, function (el){
-    return el.image
-  })
-  $('div.mainContainer').html('');
-  _.each(filteredArr, function (el) {
-    var tmpl = _.template(templates.post);
-    $('div.mainContainer').append(tmpl(el));
-    $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
-  })
-}
-
-
-
-
-
-
-
-
-
-
 
 }
