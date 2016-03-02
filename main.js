@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 var page ={
 url: "http://api.nytimes.com/svc/topstories/v1/", //section
-section: "technology",
+section: "home",
 key: ".json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993",
 
 init: function(){
@@ -20,17 +20,13 @@ initEvents: function(){
     event.preventDefault();
     var section = $(this).text();
     var link = page.clickedSection(section);
-    console.log(link);
     page.newPage(link);
   });
 },
-// initEvents: function(){
-//   $('ul li').on('click', );
-// },
+
 
 clickedSection: function(section) {
   return page.url + section + page.key;
-  // console.log(page.url + section + page.key);
 
 },
 
@@ -102,6 +98,7 @@ addDataToPage: function(dataObj){
   _.each(filteredArr, function (el) {
     var tmpl = _.template(templates.post);
     $('div.mainContainer').append(tmpl(el));
+    $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
   })
 }
 
