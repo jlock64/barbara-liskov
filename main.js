@@ -27,6 +27,10 @@ var page = {
             page.searchResults(userSubmit);
         })
     },
+    clickedSection: function(section) {
+      return page.url + section + page.key;
+      // console.log(page.url + section + page.key);
+    },
     searchResults: function(userSubmit) {},
     getSearchObj: function(data) {
         return _.map(data.results, function(el) {
