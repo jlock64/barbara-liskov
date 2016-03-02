@@ -13,6 +13,7 @@ var page = {
         page.getData();
     },
     initEvents: function() {
+        // Click on Links
         $('ul li').on('click', function(event) {
             event.preventDefault();
             var section = $(this).text();
@@ -20,17 +21,26 @@ var page = {
             console.log(link);
             page.newPage(link);
         });
+        // click on Search Bar
         $('form').on('submit', function(event) {
             event.preventDefault();
             var userSubmit = $('input[name="search"]').val();
             console.log(userSubmit);
             page.searchResults(userSubmit);
+        });
+        $('input[type="text"]').on('click', function() {
+          $(this).css({
+            "background-color": '#AA0000',
+            'color': '#fff'
+          });
         })
     },
+
     clickedSection: function(section) {
       return page.url + section + page.key;
       // console.log(page.url + section + page.key);
     },
+
     searchResults: function(userSubmit) {},
     getSearchObj: function(data) {
         return _.map(data.results, function(el) {
@@ -65,6 +75,7 @@ var page = {
             }
         })
     },
+
     newPage: function(link) {
         $.ajax({
             method: 'GET',
