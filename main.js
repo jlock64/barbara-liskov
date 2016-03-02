@@ -3,6 +3,7 @@ $(document).ready(function() {
 });
 
 var page = {
+  favUrl: "http://tiny-tiny.herokuapp.com/collections/fav",
     dataStore: [],
     favoriteStore: [],
     url: "http://api.nytimes.com/svc/topstories/v1/", //section
@@ -57,10 +58,11 @@ var page = {
 
 
       }
+      page.addFav();
 
 
-        })
-        //CLICK COMPLETED BUTTON AND ONLY SHOWS COMPLETED
+    });
+
   $('header').on('click', '.fav', function (event) {
     event.preventDefault();
     var completed = _.where(page.favoriteStore[0],{complete: true});
@@ -170,6 +172,20 @@ var page = {
 
         })
     },
+ //
+ //    addFav: function(newPost){
+ //   $.ajax({
+ //     url: page.favUrl,
+ //     method: 'POST',
+ //     data: newPost,
+ //     success: function(response){
+ //       page.();
+ //     },
+ //     error: function(err){
+ //       console.log("error", err);
+ //     }
+ //   })
+ // },
 
 
 
