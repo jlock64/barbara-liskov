@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 var page ={
 url: "http://api.nytimes.com/svc/topstories/v1/", //section
-section: "world",
+section: "technology",
 key: ".json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993",
 
 init: function(){
@@ -58,6 +58,7 @@ getDataObj: function(data){
       title: el.title,
       blurb: el.abstract,
       url: el.url,
+      subsection: el.subsection,
       date: moment(el.published_date).format('LL'),
       image: imgUrl
     }
