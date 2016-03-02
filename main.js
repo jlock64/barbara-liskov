@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 var page ={
 url: "http://api.nytimes.com/svc/topstories/v1/", //section
-section: "technology",
+section: "home",
 key: ".json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993",
 
 init: function(){
@@ -23,16 +23,35 @@ initEvents: function(){
     console.log(link);
     page.newPage(link);
   });
-},
-// initEvents: function(){
-//   $('ul li').on('click', );
-// },
 
-clickedSection: function(section) {
-  return page.url + section + page.key;
-  // console.log(page.url + section + page.key);
-
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    var userSubmit = $('input[name="search"]').val();
+    console.log(userSubmit);
+    page.searchResults(userSubmit);
+  })
 },
+
+  searchResults: function(userSubmit) {
+
+  },
+
+  getSearchObj: function(data){
+    return _.map(data.results, function(el){
+      var imgUrl = "";
+      if(el.multimedia[3]) {
+        imgUrl = el.multimedia[3].url;
+      }
+      return {
+        title: el.title,
+        blurb: el.abstract,
+        url: el.url,
+        subsection: el.subsection,
+        date: moment(el.published_date).format('LL'),
+        image: imgUrl
+      }
+    })
+  },
 
 buildUrl: function(){
   return page.url + page.section + page.key;
@@ -104,8 +123,6 @@ addDataToPage: function(dataObj){
     $('div.mainContainer').append(tmpl(el));
   })
 }
-
-
 
 
 
