@@ -1,30 +1,22 @@
 * {
   box-sizing: border-box; }
 
-.fa {
-  display: none; }
-
 .mainContainer {
   width: 70%;
   margin: 15px auto;
   box-shadow: 1px 1px 20px #333;
   padding: 20px;
-  background-color: #eee;
-  overflow: hidden;
-  position: relative;
-  top: 215px; }
+  background-color: #eee; }
 
 header {
+  position: relative;
   margin: 0;
-  margin-bottom: 28px;
+  text-align: center;
+  margin-bottom: 75px;
   padding: 0;
   width: 100%;
   background-color: #eee;
-  box-shadow: 0px 2px 20px #333;
-  position: fixed;
-  /* overflow: hidden; */
-  z-index: 10000;
-  margin-top: -20px; }
+  box-shadow: 0px 2px 20px #333; }
   header h1 {
     margin: 0;
     text-align: center;
@@ -35,12 +27,20 @@ header {
   header h3 {
     text-align: center;
     margin-top: -20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 65px;
     font-family: Tahoma;
     padding-bottom: 10px;
     text-shadow: 5px 5px 30px #fff;
     color: #AA0000; }
+  header form {
+    margin-bottom: 16px; }
+  header input {
+    outline: none;
+    text-align: center;
+    width: 23%;
+    border-radius: 10px;
+    height: 30px; }
   header .nav {
     margin: 0;
     padding: 0; }
@@ -64,19 +64,27 @@ div.postWrapper {
   width: 100%;
   position: relative;
   border-bottom: 1px solid lightgrey;
-  margin-bottom: 29px; }
-  div.postWrapper a {
+  margin-bottom: 25px; }
+  div.postWrapper a.headline {
     display: inline-block;
     vertical-align: top;
-    font-size: 30px;
-    width: 60%;
+    font-size: 26px;
+    width: 65%;
     padding-left: 15px;
     color: #333;
     font-weight: bold;
     text-decoration: none; }
-  div.postWrapper a:hover {
+  div.postWrapper a.headline:hover {
     text-decoration: underline;
     color: #AA0000; }
+  div.postWrapper p {
+    position: absolute;
+    margin-top: 0px;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    right: 16%;
+    top: 40%; }
   div.postWrapper img {
     box-shadow: 1px 1px 10px #333; }
   div.postWrapper h1 {
@@ -100,6 +108,18 @@ div.postWrapper {
     margin-top: 5px;
     color: #000;
     font-weight: 400; }
+  div.postWrapper .fa-heart-o {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 30px;
+    right: 56px;
+    transition: .2s all ease-in-out; }
+  div.postWrapper .fa-heart-o:hover {
+    transform: scale(1.4); }
+
+.heart, .arrow {
+  display: none; }
 
 @media (min-width: 0px) and (max-width: 500px) {
   * {
