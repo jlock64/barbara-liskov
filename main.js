@@ -38,11 +38,11 @@ var page = {
           });
         });
         // click favorite heart and display
-        $('.postWrapper').on('click', function(event) {
+        $('.mainContainer').on('click', function(event) {
           event.preventDefault();
-          console.log('clicked');
-          var favPost = $(this).closest('div').html();
-          $('.favSection').append(favPost);
+          console.log('HEART clicked'); //ALEX MADE HEART CLICK had to change template
+          // var favPost = $(this).closest('div').html();
+          // $('.favSection').append(favPost);
         });
 
     },
@@ -52,20 +52,15 @@ var page = {
       // console.log(page.url + section + page.key);
     },
     searchResults: function(userSubmit) {
-      // console.log("THE KEYWORD", userSubmit);
-      // console.log('VAR DATASTORAGE',page.dataStore);
-      // console.log("USER SUBMIT",userSubmit);
+      //had to create a literal variable to search case insensitive
+      var regex = new RegExp(userSubmit,'i');
+      console.log(regex);
       var matchedObj = _.map(page.dataStore, function(object) {
-        // console.log("OBJECT FROM matchedObj MAP",object);
         var filteredObjs = _.filter(object, function(el){
-          return el.title.match(userSubmit) || el.blurb.match(userSubmit)
+          return el.title.match(regex) || el.blurb.match(regex)
         });
         return filteredObjs;
       });
-      // console.log("MATCHED OBJ", matchedObj[0]);
-
-      //append results to page
-      // page.addDataToPage(matchedObj[0][0]);
       $('div.mainContainer').html('');
       _.each(matchedObj[0], function(el) {
           var tmpl = _.template(templates.post);
@@ -131,7 +126,7 @@ var page = {
             return el.image
         })
         page.dataStore.splice(0, 1, filteredArr);
-        console.log(page.dataStore);
+        // console.log(page.dataStore);
         $('div.mainContainer').html('');
         _.each(filteredArr, function(el) {
             var tmpl = _.template(templates.post);
