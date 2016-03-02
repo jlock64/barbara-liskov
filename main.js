@@ -28,15 +28,17 @@ var page = {
         $('form').on('submit', function(event) {
             event.preventDefault();
             var userSubmit = $('input[name="search"]').val();
-            // console.log(userSubmit);
+            // console.log("USER SUBMIT",userSubmit);
             page.searchResults(userSubmit);
         });
+        // change css when search bar clicked
         $('input[type="text"]').on('click', function() {
           $(this).css({
             "background-color": '#AA0000',
             'color': '#fff'
           });
         });
+
         $('.mainContainer').on('click', '.fa-heart-o', function(event){
           event.preventDefault();
           console.log('I WAS CLICKED');
@@ -81,24 +83,22 @@ var page = {
       // console.log(page.url + section + page.key);
     },
     searchResults: function(userSubmit) {
-      console.log("THE KEYWORD", userSubmit);
-      // console.log(page.dataStore);
-      //after that search with _.where
-      var filteredTitles = _.filter(page.dataStore[0].results, function(el) {
-          var deepFilter = _.filter(el, function(el) {
-              console.log("THE FILTERED ELS", el);
-              return userSubmit;
-          });
-          console.log("DEEP FILTER", deepFilter);
-          return deepFilter;
+      //had to create a literal variable to search case insensitive
+      var regex = new RegExp(userSubmit,'i');
+      console.log(regex);
+      var matchedObj = _.map(page.dataStore, function(object) {
+        var filteredObjs = _.filter(object, function(el){
+          return el.title.match(regex) || el.blurb.match(regex)
+        });
+        return filteredObjs;
       });
-      console.log("THE FILTERED TITLES", filteredTitles);
-      //append results to page
       $('div.mainContainer').html('');
-      _.each(filteredTitles, function(el) {
+      _.each(matchedObj[0], function(el) {
           var tmpl = _.template(templates.post);
           $('div.mainContainer').append(tmpl(el));
-      });
+          $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
+
+      })
 },
     buildUrl: function() {
         return page.url + page.section + page.key;
@@ -109,9 +109,9 @@ var page = {
             url: page.buildUrl(),
             dataType: 'json',
             success: function(data) {
-                // window.glob = data;
+                window.glob = data;
                 page.addDataToPage(data);
-                // page.dataStore.push(data);
+
             },
             error: function(err) {
                 console.log(err)
@@ -127,7 +127,6 @@ var page = {
                 window.glob = data;
                 // page.getDataObj(data);
                 page.addDataToPage(data);
-                page.dataStore.push(data);
                 // console.log(newArr);
             },
             error: function(err) {
@@ -161,6 +160,8 @@ var page = {
         var filteredArr = _.filter(newArr, function(el) {
             return el.image
         })
+        page.dataStore.splice(0, 1, filteredArr);
+        // console.log(page.dataStore);
         $('div.mainContainer').html('');
         _.each(filteredArr, function(el) {
             var tmpl = _.template(templates.post);
