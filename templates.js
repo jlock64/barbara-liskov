@@ -9,5 +9,10 @@ var templates ={
       '<h6><%= date %></h6>',
       '<h3><%= subsection %></h3>',
     '</div>'
-      ].join('')
+  ].join(''),
+  err: [
+    '<div class="postWrapper">',
+      '<h2>No Stories Found!</h2>',
+    '</div>'
+  ]
 }

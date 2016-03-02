@@ -2,6 +2,7 @@ $(document).ready(function() {
     page.init();
 });
 var page = {
+    dataStore: [],
     url: "http://api.nytimes.com/svc/topstories/v1/", //section
     section: "home",
     key: ".json?api-key=0c061decbcee9fc4a2a618b408849de6:18:74588993",
@@ -17,13 +18,13 @@ var page = {
             event.preventDefault();
             var section = $(this).text();
             var link = page.clickedSection(section);
-            console.log(link);
-            page.newPage(link);
+            // console.log(link);
+            page.linkedPage(link);
         });
         $('form').on('submit', function(event) {
             event.preventDefault();
             var userSubmit = $('input[name="search"]').val();
-            console.log(userSubmit);
+            // console.log(userSubmit);
             page.searchResults(userSubmit);
         })
     },
@@ -31,22 +32,25 @@ var page = {
       return page.url + section + page.key;
       // console.log(page.url + section + page.key);
     },
-    searchResults: function(userSubmit) {},
-    getSearchObj: function(data) {
-        return _.map(data.results, function(el) {
-            var imgUrl = "";
-            if (el.multimedia[3]) {
-                imgUrl = el.multimedia[3].url;
-            }
-            return {
-                title: el.title,
-                blurb: el.abstract,
-                url: el.url,
-                subsection: el.subsection,
-                date: moment(el.published_date).format('LL'),
-                image: imgUrl
-            }
-        })
+    searchResults: function(userSubmit) {
+      console.log("THE KEYWORD", userSubmit);
+      // console.log(page.dataStore);
+      //after that search with _.where
+      var filteredTitles = _.filter(page.dataStore[0].results, function(el) {
+          var deepFilter = _.filter(el, function(el) {
+              console.log("THE FILTERED ELS", el);
+              return userSubmit;
+          });
+          console.log("DEEP FILTER", deepFilter);
+          return deepFilter;
+      });
+      console.log("THE FILTERED TITLES", filteredTitles);
+      //append results to page
+      $('div.mainContainer').html('');
+      _.each(filteredTitles, function(el) {
+          var tmpl = _.template(templates.post);
+          $('div.mainContainer').append(tmpl(el));
+      });
     },
     buildUrl: function() {
         return page.url + page.section + page.key;
@@ -55,29 +59,33 @@ var page = {
         $.ajax({
             method: 'GET',
             url: page.buildUrl(),
-            dataType: "json",
+            dataType: 'json',
             success: function(data) {
-                window.glob = data;
+                // window.glob = data;
                 page.addDataToPage(data);
+                page.dataStore.push(data);
             },
             error: function(err) {
                 console.log(err)
             }
         })
     },
-    newPage: function(link) {
+    linkedPage: function(link) {
         $.ajax({
             method: 'GET',
             url: link,
-            dataType: "json",
+            dataType: 'json',
             success: function(data) {
                 window.glob = data;
                 // page.getDataObj(data);
                 page.addDataToPage(data);
+                page.dataStore.push(data);
                 // console.log(newArr);
             },
             error: function(err) {
-                console.log(err)
+                console.log('error!',err)
+                var tmpl = _.template(templates.err);
+                $('div.mainContainer').append(tmpl());
             }
         })
     },
