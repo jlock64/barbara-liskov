@@ -32,6 +32,7 @@ var page = {
             var userSubmit = $('input[name="search"]').val();
             //on submit build page
             page.searchResults(userSubmit);
+            $('input[name="search"]').val('');
         });
         // change css when search bar clicked
         $('input[type="text"]').on('click', function() {
