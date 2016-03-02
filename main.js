@@ -58,6 +58,7 @@ getDataObj: function(data){
       title: el.title,
       blurb: el.abstract,
       url: el.url,
+      subsection: el.subsection,
       date: moment(el.published_date).format('LL'),
       image: imgUrl
     }
