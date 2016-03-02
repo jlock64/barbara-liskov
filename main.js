@@ -16,10 +16,23 @@ initStyling: function(){
   page.getData();
 },
 initEvents: function(){
+  $('ul li').on('click', function(event){
+    event.preventDefault();
+    var section = $(this).text();
+    var link = page.clickedSection(section);
+    console.log(link);
+    page.newPage(link);
+  });
+},
+// initEvents: function(){
+//   $('ul li').on('click', );
+// },
+
+clickedSection: function(section) {
+  return page.url + section + page.key;
+  // console.log(page.url + section + page.key);
 
 },
-
-
 
 buildUrl: function(){
   return page.url + page.section + page.key;
@@ -32,6 +45,23 @@ getData: function () {
     dataType: "json",
     success: function(data){
       window.glob = data;
+      page.addDataToPage(data);
+
+    },
+    error: function(err){
+      console.log(err)
+    }
+  })
+
+},
+
+newPage: function (link) {
+  $.ajax({
+    method:'GET',
+    url: link,
+    dataType: "json",
+    success: function(data){
+      window.glob = data;
       // page.getDataObj(data);
       page.addDataToPage(data);
       // console.log(newArr);
@@ -40,13 +70,10 @@ getData: function () {
     error: function(err){
       console.log(err)
     }
-
-
-
-
   })
 
 },
+
 
 getDataObj: function(data){
   return _.map(data.results, function(el){
@@ -62,7 +89,6 @@ getDataObj: function(data){
       date: moment(el.published_date).format('LL'),
       image: imgUrl
     }
-
   })
 },
 
@@ -72,12 +98,11 @@ addDataToPage: function(dataObj){
   var filteredArr = _.filter(newArr, function (el){
     return el.image
   })
+  $('div.mainContainer').html('');
   _.each(filteredArr, function (el) {
     var tmpl = _.template(templates.post);
     $('div.mainContainer').append(tmpl(el));
   })
-
-
 }
 
 
