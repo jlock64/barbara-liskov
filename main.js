@@ -41,6 +41,10 @@ var page = {
                 'color': '#fff'
             });
         });
+        $('ul li').on('click', function() {
+        $('ul li').removeClass('highlight');
+        $(this).addClass('highlight');
+        });
         //clicking on favorite hearts <3
         $('.mainContainer').on('click', '.fa-heart-o', function(event) {
                 event.preventDefault();
