@@ -6,7 +6,7 @@ var page = {
   favUrl: "http://tiny-tiny.herokuapp.com/collections/fav",
 
     dataStore: [],
-    //storage for the favorites function
+
     favoriteStore: [],
     url: "http://api.nytimes.com/svc/topstories/v1/",
     section: "home",
@@ -59,7 +59,7 @@ var page = {
                 if (!changeComplete.complete) {} else {
                     $(this).css('color', 'red');
                 }
-            })
+            });
             //CLICK COMPLETED BUTTON AND ONLY SHOWS COMPLETED
         $('header').on('click', '.fav', function(event) {
             event.preventDefault();
@@ -70,52 +70,101 @@ var page = {
             function addAllLikes(arr) {
                 $('.mainContainer').html('');
                 _.each(completed, function(el) {
-                    var tmpl = _.template(templates
-                        .post);
-                    $('.mainContainer').append(tmpl(
-                        el));
+                    var tmpl = _.template(templates.post);
+                    $('.mainContainer').append(tmpl(el));
+                })
+            }
+            addAllLikes(completed);
+        });
+
+        $('header').on('click', '.heart', function(event) {
+            event.preventDefault();
+            var completed = _.where(page.favoriteStore[0], {
+                complete: true
+            });
+
+            function addAllLikes(arr) {
+                $('.mainContainer').html('');
+                _.each(completed, function(el) {
+                    var tmpl = _.template(templates.post);
+                    $('.mainContainer').append(tmpl(el));
                 })
             }
             addAllLikes(completed);
         });
 
 
-        $('.mainContainer').on('click', '.fa-heart-o', function(event){
-          event.preventDefault();
-          console.log('I WAS CLICKED');
-          console.log('ive been clicked');
-          var indexOfOurTodo = $(this).parent().siblings('.headline').text()
-          console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
-          var changeComplete = page.favoriteStore[0].filter(function(el) {
-            return el.title === indexOfOurTodo;
-          }).pop();
-          changeComplete.complete = !changeComplete.complete;
-          if(!changeComplete.complete) {
-
-      } else {
-
-        $(this).css('color', 'red');
 
 
-      }
-      page.addFav();
 
 
-    });
+$('header').on('click', '.arrow',function(event){
+  event.preventDefault();
+  console.log('ive been clicked');
+  $(this).replaceWith('<i class="fa fa-chevron-down" rel="mainContainer"></i>')
+  var selectedPage = '.' + $(this).attr('rel');
+  console.log(selectedPage);
+  $(selectedPage).siblings('div').addClass('inactive');
+  $(selectedPage).removeClass('inactive');
 
-  $('header').on('click', '.fav', function (event) {
-    event.preventDefault();
-    var completed = _.where(page.favoriteStore[0],{complete: true});
-    function addAllLikes(arr) {
-      $('.mainContainer').html('');
-      _.each(completed, function (el) {
+  //
+  // $(selectedPage).removeClass('inactive');
 
-        var tmpl = _.template(templates.post);
-    $('.mainContainer').append(tmpl(el));
-      })
-    }
-    addAllLikes(completed);
-  });
+});
+
+$('header').on('click', '.fa-chevron-down',function(event){
+  event.preventDefault();
+  console.log('ive been clicked');
+  $(this).replaceWith('<i class="fa fa-chevron-left arrow" rel="section"></i>')
+  var selectedPage = '.' + $(this).attr('rel');
+  console.log(selectedPage);
+  $(selectedPage).siblings('div').addClass('inactive');
+  $(selectedPage).removeClass('inactive');
+
+  //
+  // $(selectedPage).removeClass('inactive');
+
+});
+
+
+
+
+  //       $('.mainContainer').on('click', '.fa-heart-o', function(event){
+  //         event.preventDefault();
+  //         console.log('I WAS CLICKED');
+  //         console.log('ive been clicked');
+  //         var indexOfOurTodo = $(this).parent().siblings('.headline').text()
+  //         console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
+  //         var changeComplete = page.favoriteStore[0].filter(function(el) {
+  //           return el.title === indexOfOurTodo;
+  //         }).pop();
+  //         changeComplete.complete = !changeComplete.complete;
+  //         if(!changeComplete.complete) {
+  //
+  //     } else {
+  //
+  //       $(this).css('color', 'red');
+  //
+  //
+  //     }
+  //     page.addFav();
+  //
+  //
+  //   });
+  //
+  // $('header').on('click', '.fav', function (event) {
+  //   event.preventDefault();
+  //   var completed = _.where(page.favoriteStore[0],{complete: true});
+  //   function addAllLikes(arr) {
+  //     $('.mainContainer').html('');
+  //     _.each(completed, function (el) {
+  //
+  //       var tmpl = _.template(templates.post);
+  //   $('.mainContainer').append(tmpl(el));
+  //     })
+  //   }
+  //   addAllLikes(completed);
+  // });
 
 
 
@@ -144,8 +193,7 @@ var page = {
         _.each(matchedObj[0], function(el) {
             var tmpl = _.template(templates.post);
             $('div.mainContainer').append(tmpl(el));
-            $('.mainContainer').scrollTop($('.mainContainer')[0]
-                .scrollHeight);
+            $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
         })
     },
     //building intitial url for page load
@@ -189,8 +237,8 @@ var page = {
         return _.map(data.results, function(el) {
             var imgUrl = "";
             //needed to filter for just articles with pictures
-            if (el.multimedia[3]) {
-                imgUrl = el.multimedia[3].url;
+            if (el.multimedia[4]) {
+                imgUrl = el.multimedia[4].url;
             }
             return {
                 complete: false,
