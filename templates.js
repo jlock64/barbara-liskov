@@ -12,9 +12,7 @@ var templates ={
       '<%= blurb %>',
       '</p>',
       '<h6><%= date %></h6>',
-
       '<a class="click"><i class="fa fa-heart-o"></i></a>',
-
       '<h3><%= subsection %></h3>',
     '</div>'
   ].join(''),
