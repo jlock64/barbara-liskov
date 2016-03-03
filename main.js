@@ -41,6 +41,7 @@ var page = {
                 'color': '#fff'
             });
         });
+        // active link tab highlighted
         $('ul li').on('click', function() {
         $('ul li').removeClass('highlight');
         $(this).addClass('highlight');
@@ -150,8 +151,8 @@ var page = {
         return _.map(data.results, function(el) {
             var imgUrl = "";
             //needed to filter for just articles with pictures
-            if (el.multimedia[3]) {
-                imgUrl = el.multimedia[3].url;
+            if (el.multimedia[4]) {
+                imgUrl = el.multimedia[4].url;
             }
             return {
                 complete: false,

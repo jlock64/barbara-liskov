@@ -118,8 +118,13 @@ div.postWrapper {
     font-size: 16px;
   }
   img {
-    box-shadow: 1px 1px 10px #333;
+    box-shadow: 1px 1px 15px #333;
     width: 95%;
+    transition: .2s all ease-in-out;
+  }
+  img:hover {
+    transform: scale(.99);
+    box-shadow: none;
   }
   h1 {
     font-size: 30px;
