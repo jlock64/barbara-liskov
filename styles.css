@@ -423,7 +423,8 @@
     border-bottom: 1px solid grey;
     z-index: 10000;
     margin-top: -15px;
-    height: 73px; }
+    height: 73px;
+    width: 100%; }
     header .fa {
       display: block; }
     header h3 {
