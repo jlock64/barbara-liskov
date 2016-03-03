@@ -1,11 +1,15 @@
 @media (min-width: 801px ) and (max-width: 1150px){
+
   * {
     box-sizing: border-box;
   }
 
   .mainContainer {
+    overflow: hidden;
     width: 100%;
     margin: 15px auto;
+    position: relative;
+    top: 300px;
     // box-shadow: 1px 1px 20px #333;
     /* padding: 20px; */
     // background-color: #eee;
@@ -13,8 +17,9 @@
   }
 
   header {
-    position: relative;
-    margin: 0;
+    position: fixed;
+    margin: -15px auto;
+    z-index: 100000;
     text-align: center;
     margin-bottom: 75px;
     padding: 0;
@@ -166,6 +171,9 @@
   }
 
   .heart, .arrow {
+    display: none;
+  }
+  .inactive{
     display: none;
   }
   }
