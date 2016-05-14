@@ -13,62 +13,75 @@
   }
 
   .mainContainer {
-    /* width: 70%; */
-/* margin: 15px auto; */
-overflow: hidden;
-position: relative;
-top: 12px;
-display: flex;
-flex-flow: column;
-/* justify-content: inherit; */
-/* align-items: stretch; */
-background-color: white;
-width:100%;
+    margin: 15px auto;
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width:100%;
+    div.postWrapper {
+      width: 100%;
+      margin-left: 0;
+    }
+    a.headline {
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    h6 {
+      margin-left: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 5px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
   }
 
   header {
     display: flex;
     justify-content: space-around;
     position: fixed;
-      background-color: white;
-      box-shadow: none;
-      border-bottom: 1px solid grey;
-
+    background-color: white;
+    box-shadow: none;
+    border-bottom: 1px solid grey;
     z-index: 10000;
     margin-top: -15px;
-height: 73px;
-width: 100%;
-      .fa{
-        display: block;
-      }
-      h1 {
+    height: 73px;
+    width: 100%;
+    .fa{
+      display: block;
+    }
+    h1 {
 
-      }
-      h3 {
-        display:none;
-      }
-      form{
-        display: none;
-      }
-      .nav {
-        margin: 0;
-        padding: 0;
-      }
-      ul {
-        display: none;
-      }
-      li {
-        display: none;
-      }
-      li:hover {
-        background-color: #fff;
-        // transform: scale(0.99);
-        cursor: pointer;
-        color: #aa0000;
-      }
-      input{
-        display: none;
-      }
+    }
+    h3 {
+      display:none;
+    }
+    form{
+      display: none;
+    }
+    .nav {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      display: none;
+    }
+    li {
+      display: none;
+    }
+    li:hover {
+      background-color: #fff;
+      // transform: scale(0.99);
+      cursor: pointer;
+      color: #aa0000;
+    }
+    input{
+      display: none;
+    }
   }
 
   div.postWrapper {

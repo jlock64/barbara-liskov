@@ -54,8 +54,8 @@ var page = {
                 console.log('I WAS CLICKED');
                 console.log('ive been clicked');
                 var indexOfOurTodo = $(this).parent().siblings(
-                    '.headline').text()
-                console.log("TEST1 indexOfOurTodo", indexOfOurTodo)
+                    '.headline').text();
+                console.log("TEST1 indexOfOurTodo", indexOfOurTodo);
                 var changeComplete = page.favoriteStore[0].filter(
                     function(el) {
                         return el.title === indexOfOurTodo;
@@ -77,7 +77,7 @@ var page = {
                 _.each(completed, function(el) {
                     var tmpl = _.template(templates.post);
                     $('.mainContainer').append(tmpl(el));
-                })
+                });
             }
             addAllLikes(completed);
         });
@@ -93,7 +93,7 @@ var page = {
                 _.each(completed, function(el) {
                     var tmpl = _.template(templates.post);
                     $('.mainContainer').append(tmpl(el));
-                })
+                });
             }
             addAllLikes(completed);
         });
@@ -106,7 +106,7 @@ var page = {
 $('header').on('click', '.arrow',function(event){
   event.preventDefault();
   console.log('ive been clicked');
-  $(this).replaceWith('<i class="fa fa-chevron-down" rel="mainContainer"></i>')
+  $(this).replaceWith('<i class="fa fa-chevron-down" rel="mainContainer"></i>');
   var selectedPage = '.' + $(this).attr('rel');
   console.log(selectedPage);
   $(selectedPage).siblings('div').addClass('inactive');
@@ -120,7 +120,7 @@ $('header').on('click', '.arrow',function(event){
 $('header').on('click', '.fa-chevron-down',function(event){
   event.preventDefault();
   console.log('ive been clicked');
-  $(this).replaceWith('<i class="fa fa-chevron-left arrow" rel="section"></i>')
+  $(this).replaceWith('<i class="fa fa-chevron-left arrow" rel="section"></i>');
   var selectedPage = '.' + $(this).attr('rel');
   console.log(selectedPage);
   $(selectedPage).siblings('div').addClass('inactive');
@@ -187,7 +187,7 @@ $('header').on('click', '.fa-chevron-down',function(event){
           // filtering for matches only
             var filteredObjs = _.filter(object, function(el) {
                 return el.title.match(regex) || el.blurb
-                    .match(regex)
+                    .match(regex);
             });
             //putting filtered objects into new mapped array/object
             return filteredObjs;
@@ -199,7 +199,7 @@ $('header').on('click', '.fa-chevron-down',function(event){
             var tmpl = _.template(templates.post);
             $('div.mainContainer').append(tmpl(el));
             $('.mainContainer').scrollTop($('.mainContainer')[0].scrollHeight);
-        })
+        });
     },
     //building intitial url for page load
     buildUrl: function() {
@@ -216,9 +216,9 @@ $('header').on('click', '.fa-chevron-down',function(event){
                 page.addDataToPage(data);
             },
             error: function(err) {
-                console.log(err)
+                console.log(err);
             }
-        })
+        });
     },
     //to build the page on nav click get the content
     linkedPage: function(link) {
@@ -231,11 +231,11 @@ $('header').on('click', '.fa-chevron-down',function(event){
                 page.addDataToPage(data);
             },
             error: function(err) {
-                console.log('error!', err)
+                console.log('error!', err);
                 var tmpl = _.template(templates.err);
                 $('div.mainContainer').append(tmpl());
             }
-        })
+        });
     },
     //creating the object with the right keys for template used in addDataToPage
     getDataObj: function(data) {
@@ -253,8 +253,8 @@ $('header').on('click', '.fa-chevron-down',function(event){
                 subsection: el.subsection,
                 date: moment(el.published_date).format('LL'),
                 image: imgUrl
-            }
-        })
+            };
+        });
     },
     //to apply template and append to page
     addDataToPage: function(dataObj) {
@@ -262,8 +262,8 @@ $('header').on('click', '.fa-chevron-down',function(event){
         page.favoriteStore = [];
         page.favoriteStore.push(newArr);
         var filteredArr = _.filter(newArr, function(el) {
-            return el.image
-        })
+            return el.image;
+        });
         page.dataStore.splice(0, 1, filteredArr);
         $('div.mainContainer').html('');
         _.each(filteredArr, function(el) {
@@ -271,7 +271,7 @@ $('header').on('click', '.fa-chevron-down',function(event){
             $('div.mainContainer').append(tmpl(el));
             $('.mainContainer').scrollTop($('.mainContainer')[0]
                 .scrollHeight);
-        })
+        });
     },
 
  //
@@ -292,4 +292,4 @@ $('header').on('click', '.fa-chevron-down',function(event){
 
 
 
-}
+};
